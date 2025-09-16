@@ -5,13 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Luiz Felipe Maciel Mendonça — Portfólio</title>
 
-  <!-- CSS principal (na raiz do repo) -->
-  <link rel="stylesheet" href="/style.css?v=3" />
-
-  <!-- Fonte -->
+  <link rel="stylesheet" href="/style.css?v=4" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-
   <link rel="icon" href="data:;base64,iVBORw0KGgo=">
 </head>
 <body>
@@ -19,18 +15,18 @@
     <div class="container hero">
       <div class="avatar">
         <img
-          src="https://github.com/fxlipemac.png?size=256"
+          src="https://github.com/fxlipemac.png?size=512"
           alt="Foto de perfil de Luiz Felipe Maciel Mendonça"
-          width="96" height="96" loading="eager" decoding="async"
+          width="160" height="160" loading="eager" decoding="async"
         >
       </div>
       <div class="hero-text">
         <h1>Luiz Felipe Maciel Mendonça</h1>
         <p class="subtitle">Salesforce Developer Júnior • Estagiário em Engenharia de Software</p>
         <div class="actions">
-          <a class="btn primary" href="mailto:felipemaciel1501@hotmail.com">Contato</a>
+          <a class="btn primary" href="https://www.linkedin.com/in/felipemaciel" target="_blank" rel="noopener">LinkedIn</a>
           <a class="btn" href="https://github.com/fxlipemac" target="_blank" rel="noopener">GitHub</a>
-          <a class="btn" href="https://www.linkedin.com/in/felipemaciel" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn outline" href="mailto:felipemaciel1501@hotmail.com">E-mail</a>
         </div>
         <p class="location">Porto Alegre – RS, Brasil • Remoto</p>
       </div>
@@ -55,3 +51,103 @@
         </ul>
       </div>
     </section>
+
+    <section class="container">
+      <h2>Habilidades</h2>
+      <ul class="chips">
+        <li>Python</li><li>PHP</li><li>C</li><li>Laravel</li>
+        <li>MySQL</li><li>SOQL</li><li>Salesforce (Apex/LWC)</li>
+        <li>YOLOv11</li><li>Git/GitHub</li><li>HTML</li><li>CSS</li>
+      </ul>
+    </section>
+
+    <section class="container">
+      <h2>Projetos</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>YOLOv11 — Detecção de Veículos</h3>
+          <p>Modelo para detectar exclusivamente veículos em frames de vídeo, análise de métricas e relatório de confiança.</p>
+          <div class="tags"><span>Python</span><span>YOLOv11</span><span>ML</span></div>
+          <div class="card-actions">
+            <a class="btn small" href="#" aria-disabled="true">Repositório</a>
+            <a class="btn small outline" href="#" aria-disabled="true">Demo</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>CRUD — Laravel + MySQL</h3>
+          <p>Sistema com autenticação, filtros e relacionamentos. Migrações e seeders para dados de exemplo.</p>
+          <div class="tags"><span>PHP</span><span>Laravel</span><span>MySQL</span></div>
+          <div class="card-actions">
+            <a class="btn small" href="#" aria-disabled="true">Repositório</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Introdução a Python com Flask</h3>
+          <p>Fundamentos de Python, APIs REST, métodos HTTP, banco de dados, autenticação com Flask-Login e deploy.</p>
+          <div class="tags"><span>Python</span><span>Flask</span><span>APIs</span></div>
+          <div class="card-actions">
+            <a class="btn small" href="#" aria-disabled="true">Repositório</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Java Serverless — URL Shortener</h3>
+          <p>AWS Lambda + API Gateway + S3. Serialização JSON (Jackson) e build com Maven.</p>
+          <div class="tags"><span>Java</span><span>AWS</span><span>Serverless</span></div>
+          <div class="card-actions">
+            <a class="btn small" href="#" aria-disabled="true">Repositório</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="container grid two-col">
+      <div>
+        <h2>Formação</h2>
+        <ul class="timeline">
+          <li>
+            <div class="row">
+              <strong>Ensino Médio Completo</strong>
+              <span>Concluído</span>
+            </div>
+          </li>
+          <li>
+            <div class="row">
+              <strong>Engenharia de Software</strong>
+              <span>Estácio (2025–2029)</span>
+            </div>
+            <p>Disciplinas atuais: Cloud Computing, Redes, Processos de Desenvolvimento, Segurança da Informação, Matemática e Lógica.</p>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h2>Certificações</h2>
+        <ul class="bullets">
+          <li>Rocketseat: Python/Flask/DB • Java Serverless AWS • PHP/Laravel</li>
+          <li>Trailhead: Basics, Dev Basics, Salesforce DX, LWC, Modelagem de Dados, Criação de App</li>
+        </ul>
+
+        <h2 class="mt">Contato</h2>
+        <ul class="links">
+          <li><a href="mailto:felipemaciel1501@hotmail.com">felipemaciel1501@hotmail.com</a></li>
+          <li><a href="https://github.com/fxlipemac" target="_blank" rel="noopener">github.com/fxlipemac</a></li>
+          <li><a href="https://www.linkedin.com/in/felipemaciel" target="_blank" rel="noopener">linkedin.com/in/felipemaciel</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="y"></span> Luiz Felipe Maciel Mendonça</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
