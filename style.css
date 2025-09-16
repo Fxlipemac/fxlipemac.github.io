@@ -32,13 +32,25 @@ body{
 .hero{
   display:flex;gap:24px;align-items:center;padding:56px 20px 36px;
 }
+
+/* AVATAR: agora aceita imagem (foto do GitHub) */
 .avatar{
-  width:96px;height:96px;border-radius:50%;
+  width:clamp(72px,10vw,96px);
+  height:clamp(72px,10vw,96px);
+  border-radius:50%;
+  overflow:hidden;
   display:grid;place-items:center;
   background:linear-gradient(145deg,#1a2030,#0f1420);
   border:1px solid var(--stroke);
   font-weight:700;color:#a3b6ff;
 }
+.avatar img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
 .hero-text h1{margin:0 0 6px 0;font-size:clamp(24px,4vw,36px)}
 .subtitle{margin:0 0 12px 0;color:var(--muted)}
 .location{color:var(--muted);margin-top:10px}
@@ -47,9 +59,14 @@ body{
 .btn{
   display:inline-block;padding:10px 14px;border-radius:10px;
   border:1px solid var(--stroke);color:var(--text);text-decoration:none;
-  background:var(--panel);transition:all .2s ease;font-weight:600
+  background:var(--panel);transition:transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+  font-weight:600
 }
-.btn:hover{transform:translateY(-1px);border-color:#2a3342}
+.btn:hover{
+  transform:translateY(-1px);
+  border-color:#2a3342;
+  box-shadow:0 6px 18px rgba(0,0,0,.25);
+}
 .btn.primary{background:linear-gradient(180deg,var(--brand),#2563eb);border:none}
 .btn.outline{background:transparent}
 .btn.small{padding:8px 12px;font-size:.95rem}
