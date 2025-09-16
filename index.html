@@ -1,66 +1,150 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio - Luiz Felipe Maciel Mendonça</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Luiz Felipe Maciel Mendonça — Portfólio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>Luiz Felipe Maciel Mendonça</h1>
-      <p>Desenvolvedor Júnior | Estagiário em Engenharia de Software</p>
+  <header class="site-header">
+    <div class="container hero">
+      <div class="avatar" aria-hidden="true">LM</div>
+      <div class="hero-text">
+        <h1>Luiz Felipe Maciel Mendonça</h1>
+        <p class="subtitle">Desenvolvedor Júnior • Estagiário em Engenharia de Software</p>
+        <div class="actions">
+          <a class="btn primary" href="mailto:felipemaciel1501@hotmail.com">Contato</a>
+          <a class="btn" href="https://github.com/fxlipemac" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/felipemaciel" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn outline" href="cv.pdf" download>Download CV</a>
+        </div>
+        <p class="location">Porto Alegre – RS, Brasil • Remoto</p>
+      </div>
     </div>
   </header>
 
-  <section class="about">
-    <div class="container">
-      <h2>Sobre Mim</h2>
-      <p>Estudante de Engenharia de Software na Estácio de Sá, com experiência em projetos acadêmicos e pessoais envolvendo Salesforce, Desenvolvimento Web e Machine Learning. Busco oportunidades remotas como desenvolvedor júnior ou estagiário.</p>
-    </div>
-  </section>
+  <main>
+    <section class="container grid two-col">
+      <div>
+        <h2>Sobre mim</h2>
+        <p>
+          Estudante de Engenharia de Software (Estácio) e trilha Desenvolvedor no Salesforce Trailhead.
+          Experiência com desenvolvimento web (PHP/Laravel, MySQL), Java com AWS serverless, Python e C.
+          Interesse em atuar como Salesforce Developer Jr ou Back-end Jr. Foco atual: cloud computing, dados e automação.
+        </p>
+      </div>
+      <div>
+        <h2>Resumo rápido</h2>
+        <ul class="bullets">
+          <li>Trailhead: <strong>5.475 pts</strong> • <strong>11 emblemas</strong> (Desenvolvedor)</li>
+          <li>Rocketseat: Python/Flask/DB • Java Serverless AWS • PHP/Laravel</li>
+          <li>Cloud: IaaS, PaaS, SaaS • Nuvem Pública/Privada/Híbrida • AWS (Lambda, S3, API Gateway)</li>
+        </ul>
+      </div>
+    </section>
 
-  <section class="education">
-    <div class="container">
-      <h2>Formação</h2>
-      <ul>
-        <li><strong>Bacharelado em Engenharia de Software</strong> – Estácio de Sá (2025 – 2029)</li>
-        <li><strong>Ciência da Computação (1º semestre)</strong> – UNIPAMPA (2024)</li>
-        <li><strong>Técnico em Eletrotécnica</strong> – Escola Politécnica Brasileira (2021 – 2023)</li>
+    <section class="container">
+      <h2>Habilidades</h2>
+      <ul class="chips">
+        <li>Python</li><li>Java</li><li>PHP</li><li>C</li>
+        <li>Laravel</li><li>Flask</li><li>React</li><li>Tailwind</li>
+        <li>MySQL</li><li>SQLite</li>
+        <li>AWS Lambda</li><li>S3</li><li>API Gateway</li>
+        <li>Salesforce (Apex/LWC básico)</li>
+        <li>YOLOv11</li><li>Métricas de ML</li>
+        <li>Git/GitHub</li>
       </ul>
-    </div>
-  </section>
+    </section>
 
-  <section class="projects">
-    <div class="container">
+    <section class="container">
       <h2>Projetos</h2>
-      <ul>
-        <li><strong>YOLOv11 – Detecção de Veículos:</strong> Modelo de Machine Learning para análise de tráfego.</li>
-        <li><strong>CRUD com Laravel e MySQL:</strong> Sistema com autenticação, filtros e relacionamentos de dados.</li>
-        <li><strong>Aplicações Web:</strong> Criação de páginas com HTML, CSS, PHP e integração com MySQL.</li>
-      </ul>
-    </div>
-  </section>
+      <div class="cards">
+        <article class="card">
+          <h3>YOLOv11 — Detecção de Veículos</h3>
+          <p>Modelo para detectar exclusivamente veículos em frames de vídeo, análise de métricas e relatório de confiança.</p>
+          <div class="tags"><span>Python</span><span>YOLOv11</span><span>ML</span></div>
+          <div class="card-actions">
+            <a class="btn small" href="#" aria-disabled="true">Repositório</a>
+            <a class="btn small outline" href="#" aria-disabled="true">Demo</a>
+          </div>
+        </article>
 
-  <section class="certifications">
-    <div class="container">
-      <h2>Certificações</h2>
-      <ul>
-        <li>Rocketseat – Python, Java Serverless com AWS, PHP/Laravel</li>
-        <li>Salesforce Trailhead – 5.475 pontos, 11 emblemas (Trilha Desenvolvedor)</li>
-      </ul>
-    </div>
-  </section>
+        <article class="card">
+          <h3>CRUD — Laravel + MySQL</h3>
+          <p>Sistema com autenticação, filtros e relacionamentos. Migrações e seeders para dados de exemplo.</p>
+          <div class="tags"><span>PHP</span><span>Laravel</span><span>MySQL</span></div>
+          <div class="card-actions">
+            <a class="btn small" href="#" aria-disabled="true">Repositório</a>
+          </div>
+        </article>
 
-  <footer>
+        <article class="card">
+          <h3>Java Serverless — URL Shortener</h3>
+          <p>Funções AWS Lambda + API Gateway + S3. Serialização JSON com Jackson e build com Maven.</p>
+          <div class="tags"><span>Java</span><span>AWS</span><span>Serverless</span></div>
+          <div class="card-actions">
+            <a class="btn small" href="#" aria-disabled="true">Repositório</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="container grid two-col">
+      <div>
+        <h2>Formação</h2>
+        <ul class="timeline">
+          <li>
+            <div class="row">
+              <strong>Engenharia de Software</strong>
+              <span>Estácio (2025–2029)</span>
+            </div>
+            <p>Disciplinas atuais: Cloud Computing, Redes, Processos de Desenvolvimento, Segurança da Informação, Matemática e Lógica.</p>
+          </li>
+          <li>
+            <div class="row">
+              <strong>Ciência da Computação (1º semestre)</strong>
+              <span>UNIPAMPA (2024)</span>
+            </div>
+            <p>Fundamentos de programação e algoritmos, Python, C, arquitetura de computadores, introdução a ML.</p>
+          </li>
+          <li>
+            <div class="row">
+              <strong>Ensino Médio Completo</strong>
+              <span>Concluído</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h2>Certificações</h2>
+        <ul class="bullets">
+          <li>Rocketseat: Python/Flask/DB • Java Serverless AWS • PHP/Laravel</li>
+          <li>Trailhead: Basics, Dev Basics, Salesforce DX, LWC, Modelagem de Dados, Criação de App</li>
+        </ul>
+
+        <h2 class="mt">Contato</h2>
+        <ul class="links">
+          <li><a href="mailto:felipemaciel1501@hotmail.com">felipemaciel1501@hotmail.com</a></li>
+          <li><a href="https://github.com/fxlipemac" target="_blank" rel="noopener">github.com/fxlipemac</a></li>
+          <li><a href="https://www.linkedin.com/in/felipemaciel" target="_blank" rel="noopener">linkedin.com/in/felipemaciel</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
     <div class="container">
-      <p>📧 felipemaciel1501@hotmail.com | 📍 Porto Alegre – RS, Brasil</p>
-      <p>
-        🔗 <a href="https://www.linkedin.com/in/felipemaciel">LinkedIn</a> | 
-        💻 <a href="https://github.com/fxlipemac">GitHub</a>
-      </p>
+      <p>© <span id="y"></span> Luiz Felipe Maciel Mendonça</p>
     </div>
   </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
