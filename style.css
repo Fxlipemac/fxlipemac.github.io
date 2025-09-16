@@ -6,7 +6,6 @@
   --brand:#3b82f6;
   --brand-dark:#2563eb;
   --stroke:#232a35;
-  --chip:#1b2230;
 
   --avatar-size: clamp(220px, 34vw, 300px);
 }
@@ -19,7 +18,8 @@ body{
     radial-gradient(1200px 600px at 10% -20%, rgba(59,130,246,.18), transparent 60%),
     radial-gradient(900px 500px at 90% 0%, rgba(34,197,94,.12), transparent 60%),
     linear-gradient(180deg, #0b0f17, #0b0c10);
-  color:var(--text); line-height:1.65; -webkit-font-smoothing:antialiased;
+  color:var(--text);
+  line-height:1.65; -webkit-font-smoothing:antialiased;
 }
 .wrap{max-width:980px;margin:0 auto;padding:0 20px}
 
@@ -82,21 +82,16 @@ body{
 
 /* Skills */
 .icon-grid{ list-style:none; padding:0; margin:8px 0 0 0; display:flex; flex-wrap:wrap; gap:12px }
-.icon-grid li, .icon-badge, .svgicon{
+.icon-grid li, .svgicon{
   width:56px; height:56px; display:grid; place-items:center;
   background:#0f1319; border:1px solid var(--stroke); border-radius:999px;
   color:#c4ccd9; transition:transform .15s ease, box-shadow .15s ease, border-color .15s ease;
 }
-.icon-grid li:hover, .icon-badge:hover, .svgicon:hover{
+.icon-grid li:hover, .svgicon:hover{
   transform:translateY(-2px); box-shadow:0 10px 20px rgba(4,10,25,.35); border-color:#2a3342
 }
 .icon-grid i{ font-size:26px; line-height:1; filter:grayscale(100%) contrast(100%) brightness(95%) }
-.icon-badge{
-  background:#0f1624; color:#79a1ff; font-weight:800; border:1px solid #24314a;
-  letter-spacing:.02em; font-size:.8rem; text-transform:uppercase;
-  font-family:"JetBrains Mono", ui-monospace, monospace;
-}
-.svgicon svg{ width:28px; height:28px; display:block; }
+.svgicon svg{ width:28px; height:28px; display:block; fill:currentColor; stroke:currentColor; }
 
 /* Projetos */
 .plist{list-style:none;margin:0;padding:0}
@@ -126,12 +121,18 @@ body{
 .thumb:hover{ transform:translateY(-2px); box-shadow:0 16px 30px rgba(4,10,25,.36); border-color:#2a3342 }
 .thumb img{ width:100%; height:100%; object-fit:cover; display:block }
 
-/* Competências */
-.soft-grid{ display:grid; gap:12px; grid-template-columns:repeat(3,minmax(0,1fr)) }
+/* Competências (grid não estica) */
+.soft-grid{
+  display:grid; gap:12px; grid-template-columns:repeat(3,minmax(0,1fr));
+  align-items:start;     /* <— evita “esticar” */
+}
 @media (max-width:960px){ .soft-grid{grid-template-columns:repeat(2,1fr)} }
 @media (max-width:640px){ .soft-grid{grid-template-columns:1fr} }
 
-.soft-item{ position:relative; border:1px solid var(--stroke); border-radius:12px; background:var(--panel); overflow:hidden }
+.soft-item{
+  position:relative; border:1px solid var(--stroke); border-radius:12px;
+  background:var(--panel); overflow:hidden; align-self:start; /* <— garante altura auto */
+}
 .soft-item summary{
   cursor:pointer; list-style:none; display:flex; align-items:center; justify-content:space-between;
   padding:10px 12px; font-weight:800; color:var(--text)
@@ -146,6 +147,20 @@ body{
   padding:6px 10px; border-radius:999px; font-weight:700; font-size:.92rem;
   background:#0f1a2a; border:1px solid #23314b; color:#9ec1ff;
 }
+
+/* Formação */
+.edu{ list-style:none; padding:0; margin:0; display:grid; gap:12px }
+.edu-item{ display:grid; grid-template-columns:auto 1fr; gap:12px; align-items:center;
+  background:#0f1319; border:1px solid var(--stroke); border-radius:12px; padding:10px 12px }
+.edu-ico{ width:44px; height:44px; display:grid; place-items:center; border-radius:999px;
+  background:#0f1624; border:1px solid #24314a; color:#9ec1ff }
+.edu-ico svg{ width:24px; height:24px }
+.edu-body .muted{ color:#9aa4b2 }
+
+/* Idiomas */
+.chips{ list-style:none; padding:0; margin:8px 0 0 0; display:flex; gap:10px; flex-wrap:wrap }
+.chips li{ background:#0f1a2a; border:1px solid #23314b; color:#cfe0ff; padding:8px 12px; border-radius:999px; font-weight:700 }
+.lang-ico{ margin-right:6px }
 
 /* Rodapé */
 .foot{padding:28px 20px 40px;color:#8a97ac;text-align:center}
