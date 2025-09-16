@@ -1,4 +1,3 @@
-/* ===== Paleta ===== */
 :root{
   --bg:#0b0c0f;
   --panel:#15181f;
@@ -10,7 +9,6 @@
   --chip:#1b2230;
 }
 
-/* Base */
 *{box-sizing:border-box}
 html,body{margin:0;padding:0}
 body{
@@ -48,7 +46,7 @@ body{
 .factline{display:flex;gap:12px;flex-wrap:wrap;margin:8px 0 0 0;padding:0;list-style:none}
 .factline li{background:#101620;border:1px solid var(--stroke);padding:6px 10px;border-radius:999px;color:#b4c0d3;font-weight:600}
 
-/* Foto circular com anel */
+/* Foto circular */
 .portrait{position:relative;display:grid;place-items:center}
 .portrait .ring{
   position:absolute;z-index:0;width:clamp(260px,42vw,380px);aspect-ratio:1;border-radius:50%;
@@ -67,21 +65,15 @@ body{
 .section{padding:22px 0 8px}
 .section h2{margin:0 0 14px 0;font-size:1.35rem}
 
-/* ===== Skills: ícones circulares ===== */
-.icon-grid{
-  list-style:none; padding:0; margin:8px 0 0 0;
-  display:flex; flex-wrap:wrap; gap:12px;
-}
-.icon-grid li,
-.icon-badge{
+/* Skills: ícones circulares */
+.icon-grid{ list-style:none; padding:0; margin:8px 0 0 0; display:flex; flex-wrap:wrap; gap:12px }
+.icon-grid li, .icon-badge{
   width:56px; height:56px; display:grid; place-items:center;
   background:#0f1319; border:1px solid var(--stroke); border-radius:999px;
   color:#c4ccd9; transition:transform .15s ease, box-shadow .15s ease, border-color .15s ease;
 }
 .icon-grid li:hover, .icon-badge:hover{
-  transform:translateY(-2px);
-  box-shadow:0 10px 20px rgba(4,10,25,.35);
-  border-color:#2a3342;
+  transform:translateY(-2px); box-shadow:0 10px 20px rgba(4,10,25,.35); border-color:#2a3342
 }
 .icon-grid i{ font-size:26px; line-height:1; filter:grayscale(100%) contrast(100%) brightness(95%) }
 .icon-badge{
@@ -89,16 +81,14 @@ body{
   letter-spacing:.02em; font-size:.8rem; text-transform:uppercase;
 }
 
-/* ===== Projetos (com thumbnail à direita) ===== */
+/* Projetos (texto + thumb) */
 .plist{list-style:none;margin:0;padding:0}
 .project{
   display:grid; grid-template-columns:1fr auto; gap:16px;
   padding:16px 0; border-bottom:1px dashed var(--stroke);
   align-items:center;
 }
-@media (max-width:720px){
-  .project{ grid-template-columns:1fr; }
-}
+@media (max-width:720px){ .project{ grid-template-columns:1fr } }
 .plist h3{margin:0 0 6px 0;font-size:1.08rem}
 .plist p{margin:0;color:#c2ccdb}
 .plist .stack{color:#9ec1ff;font-weight:700}
@@ -110,38 +100,32 @@ body{
 .mini:hover{text-decoration:underline}
 .mini[target="_blank"]::after{ content:" ↗"; font-weight:700 }
 
-/* thumbnail do certificado / projeto */
 .thumb{
   width:168px; height:104px; border-radius:12px; overflow:hidden;
   border:1px solid var(--stroke); background:#0f1319; display:block;
-  box-shadow:0 8px 18px rgba(4,10,25,.28); transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+  box-shadow:0 8px 18px rgba(4,10,25,.28);
+  transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease;
 }
 .thumb:hover{ transform:translateY(-2px); box-shadow:0 16px 30px rgba(4,10,25,.36); border-color:#2a3342 }
-.thumb img{ width:100%; height:100%; object-fit:cover; display:block; }
+.thumb img{ width:100%; height:100%; object-fit:cover; display:block }
 
-/* ===== Competências (compacto, 3 por linha) ===== */
-.soft-grid{
-  display:grid; gap:12px; grid-template-columns:repeat(3,minmax(0,1fr));
-}
+/* Competências (3 colunas + toggle) */
+.soft-grid{ display:grid; gap:12px; grid-template-columns:repeat(3,minmax(0,1fr)) }
 @media (max-width:960px){ .soft-grid{grid-template-columns:repeat(2,1fr)} }
 @media (max-width:640px){ .soft-grid{grid-template-columns:1fr} }
 
-.soft-item{
-  border:1px solid var(--stroke);
-  border-radius:12px;
-  background:var(--panel);
-  overflow:hidden;
-}
+.soft-item{ border:1px solid var(--stroke); border-radius:12px; background:var(--panel); overflow:hidden }
 .soft-item summary{
-  cursor:pointer; list-style:none;
-  display:flex; align-items:center; justify-content:space-between;
-  padding:10px 12px; font-weight:800; color:var(--text);
+  cursor:pointer; list-style:none; display:flex; align-items:center; justify-content:space-between;
+  padding:10px 12px; font-weight:800; color:var(--text)
 }
 .soft-item summary::-webkit-details-marker{display:none}
 .soft-item summary::after{ content:"▾"; color:#9ec1ff; transition:transform .18s ease }
 .soft-item[open] summary::after{ transform:rotate(180deg) }
 
+/* >>> Linha full-bleed e conteúdo */
 .soft-body{
+  margin:0 -12px;                  /* faz a borda ocupar toda a largura do card */
   border-top:1px dashed var(--stroke);
   padding:10px 12px;
   background:#0f141d;
