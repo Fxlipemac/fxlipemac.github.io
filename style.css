@@ -1,16 +1,16 @@
-/* ===== Paleta inspirada no azul que você enviou ===== */
+/* ===== Paleta (azul minimalista) ===== */
 :root{
-  --bg:#eef2f7;          /* fundo quase cinza-claro */
-  --panel:#ffffff;       /* cartões */
-  --text:#0f172a;        /* quase preto azulado */
-  --muted:#5b6473;       /* cinza azulado */
-  --brand:#123ea7;       /* azul principal */
-  --brand-dark:#0a2a6b;  /* azul profundo */
-  --stroke:#e5e7eb;      /* borda clara */
-  --chip:#e6eeff;        /* tag azul clarinha */
+  --bg:#eef2f7;
+  --panel:#ffffff;
+  --text:#0f172a;
+  --muted:#5b6473;
+  --brand:#123ea7;
+  --brand-dark:#0a2a6b;
+  --stroke:#e5e7eb;
+  --chip:#e6eeff;
 }
 
-/* ===== Base ===== */
+/* Base */
 *{box-sizing:border-box}
 html,body{margin:0;padding:0}
 body{
@@ -20,7 +20,7 @@ body{
 }
 .wrap{max-width:980px;margin:0 auto;padding:0 20px}
 
-/* ===== HERO ===== */
+/* HERO */
 .hero{display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:center;padding:56px 0 18px}
 @media (max-width:900px){.hero{grid-template-columns:1fr;gap:18px}}
 
@@ -31,18 +31,21 @@ body{
 
 .links{display:flex;gap:10px;flex-wrap:wrap;margin:10px 0 12px}
 .pill{
-  display:inline-block;text-decoration:none;font-weight:700;
-  padding:10px 14px;border-radius:999px;border:1px solid var(--stroke);
-  color:var(--text);background:var(--panel);transition:transform .15s ease, box-shadow .15s ease;
+  display:inline-flex; align-items:center; gap:8px;
+  text-decoration:none; font-weight:700; padding:10px 14px;
+  border-radius:999px; border:1px solid var(--stroke);
+  color:var(--text); background:var(--panel);
+  transition:transform .15s ease, box-shadow .15s ease;
 }
 .pill.primary{background:var(--brand);color:#fff;border-color:transparent}
 .pill.ghost{background:transparent}
 .pill:hover{transform:translateY(-1px);box-shadow:0 10px 24px rgba(15,23,42,.08)}
+.ico{ width:18px; height:18px; flex:0 0 18px; color:currentColor; }
 
 .factline{display:flex;gap:12px;flex-wrap:wrap;margin:8px 0 0 0;padding:0;list-style:none}
 .factline li{background:#f1f5fb;border:1px solid var(--stroke);padding:6px 10px;border-radius:999px;color:#334155;font-weight:600}
 
-/* ===== Foto circular com anel/gradiente azul ===== */
+/* Foto circular com anel */
 .portrait{position:relative;display:grid;place-items:center}
 .portrait .ring{
   position:absolute;z-index:0;width:clamp(260px,42vw,380px);aspect-ratio:1;border-radius:50%;
@@ -57,68 +60,84 @@ body{
   box-shadow:0 12px 36px rgba(10,26,70,.18);
 }
 
-/* ===== Seções ===== */
+/* Seções */
 .section{padding:22px 0 8px}
 .section h2{margin:0 0 10px 0;font-size:1.35rem}
 
-/* ===== Chips (skills) ===== */
-.chips{display:flex;flex-wrap:wrap;gap:10px;margin:8px 0 0 0;padding:0}
-.chips li{
-  list-style:none;background:var(--chip);color:#153e91;border:1px solid #d8e4ff;
-  padding:8px 12px;border-radius:999px;font-weight:700
+/* ===== Skills: grade de ícones ===== */
+.icon-grid{
+  list-style:none; padding:0; margin:8px 0 0 0;
+  display:flex; flex-wrap:wrap; gap:12px;
+}
+.icon-grid li{
+  width:54px; height:54px;
+  display:grid; place-items:center;
+  background:var(--panel);
+  border:1px solid var(--stroke);
+  border-radius:12px;
+  color:#2b3b58;
+  transition:transform .15s ease, box-shadow .15s ease;
+}
+.icon-grid li:hover{ transform:translateY(-2px); box-shadow:0 10px 20px rgba(15,23,42,.08) }
+.icon-grid i{ font-size:28px; line-height:1; filter:grayscale(100%) contrast(90%) }
+
+.icon-badge{
+  width:54px; height:54px; display:grid; place-items:center;
+  background:#f0f4ff; color:#123ea7; font-weight:800;
+  border:1px solid #dbe4ff; border-radius:12px;
+  letter-spacing:.02em; font-size:.85rem;
 }
 
-/* ===== Projetos: lista simples ===== */
+/* ===== Projetos ===== */
 .plist{list-style:none;margin:0;padding:0}
 .plist li{padding:14px 0;border-bottom:1px dashed var(--stroke)}
 .plist h3{margin:0 0 4px 0;font-size:1.05rem}
 .plist p{margin:0;color:#405168}
 .plist .stack{color:#153e91;font-weight:700}
 .row{margin-top:6px}
-.mini{font-family:"JetBrains Mono",monospace;font-weight:600;font-size:.9rem;text-decoration:none;color:var(--brand)}
+.mini{
+  font-family:"JetBrains Mono",monospace;font-weight:600;font-size:.9rem;
+  text-decoration:none;color:var(--brand)
+}
 .mini:hover{text-decoration:underline}
+.mini[target="_blank"]::after{ content:" ↗"; font-weight:700 }
 
-/* ===== Toggle: Competências socioemocionais ===== */
-.soft{
-  background:var(--panel); border:1px solid var(--stroke); border-radius:16px;
-  padding:12px 14px 6px; overflow:hidden;
+/* ===== Competências: toggles individuais ===== */
+.soft-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:12px;
 }
-.soft summary{
-  cursor:pointer; list-style:none; display:flex; align-items:center; gap:8px;
-  font-weight:800; color:var(--brand); margin:0 0 6px 0;
-}
-.soft summary::-webkit-details-marker{display:none}
-.soft summary::before{
-  content:"▸"; color:var(--brand); font-size:1rem; transition:transform .18s ease;
-}
-.soft[open] > summary::before{transform:rotate(90deg)}
-.soft summary span{color:var(--muted);font-weight:600}
+@media (max-width:720px){ .soft-grid{grid-template-columns:1fr} }
 
-.soft-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:8px}
-@media (max-width:720px){.soft-grid{grid-template-columns:1fr}}
-.soft-card{
-  background:#f9fbff;border:1px solid var(--stroke);border-radius:12px;padding:10px 12px
+.soft-item{ border-radius:12px; overflow:hidden; }
+
+.soft-item summary{
+  cursor:pointer; list-style:none;
+  display:flex; align-items:center; justify-content:space-between; gap:8px;
+  padding:10px 12px; background:var(--panel);
+  border:1px solid var(--stroke); border-radius:12px;
+  font-weight:800; color:var(--text);
 }
-.soft-card h4{margin:0 0 8px 0;font-size:.98rem}
-.pills{display:flex;flex-wrap:wrap;gap:8px}
+.soft-item summary::-webkit-details-marker{display:none}
+.soft-item summary::after{
+  content:"▾"; color:var(--brand); font-size:1rem; transition:transform .18s ease;
+}
+.soft-item[open] summary{
+  border-bottom-left-radius:0; border-bottom-right-radius:0; border-bottom-color:transparent;
+}
+.soft-item[open] summary::after{ transform:rotate(180deg) }
+
+.soft-body{
+  background:#f9fbff; border:1px solid var(--stroke); border-top:none;
+  border-radius:0 0 12px 12px; padding:10px 12px;
+}
+
+.pills{ display:flex; flex-wrap:wrap; gap:8px }
 .pills span{
-  background:#eaf0ff;border:1px solid #dfe7ff;color:#123ea7;
-  padding:6px 10px;border-radius:999px;font-weight:700;font-size:.92rem
+  background:#eaf0ff; border:1px solid #dfe7ff; color:#123ea7;
+  padding:6px 10px; border-radius:999px; font-weight:700; font-size:.92rem;
 }
 
-/* ===== Rodapé ===== */
+/* Rodapé */
 .foot{padding:28px 20px 40px;color:#5f6c80;text-align:center}
-
-/* Ícones nos botões e chips */
-.links .pill{
-  display:inline-flex; align-items:center; gap:8px;
-}
-.ico{ width:18px; height:18px; flex:0 0 18px; }
-
-.chips-icons li{
-  display:inline-flex; align-items:center; gap:8px;
-}
-.ico-sm{ width:16px; height:16px; flex:0 0 16px; }
-
-/* Deixa os ícones herdarem a cor do texto do componente */
-.ico, .ico-sm{ color:currentColor }
