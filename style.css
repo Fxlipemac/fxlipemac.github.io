@@ -109,12 +109,12 @@ body{
 .thumb:hover{ transform:translateY(-2px); box-shadow:0 16px 30px rgba(4,10,25,.36); border-color:#2a3342 }
 .thumb img{ width:100%; height:100%; object-fit:cover; display:block }
 
-/* Competências (3 colunas + toggle) */
+/* Competências (3 colunas + accordion) */
 .soft-grid{ display:grid; gap:12px; grid-template-columns:repeat(3,minmax(0,1fr)) }
 @media (max-width:960px){ .soft-grid{grid-template-columns:repeat(2,1fr)} }
 @media (max-width:640px){ .soft-grid{grid-template-columns:1fr} }
 
-.soft-item{ border:1px solid var(--stroke); border-radius:12px; background:var(--panel); overflow:hidden }
+.soft-item{ position:relative; border:1px solid var(--stroke); border-radius:12px; background:var(--panel); overflow:hidden }
 .soft-item summary{
   cursor:pointer; list-style:none; display:flex; align-items:center; justify-content:space-between;
   padding:10px 12px; font-weight:800; color:var(--text)
@@ -123,12 +123,11 @@ body{
 .soft-item summary::after{ content:"▾"; color:#9ec1ff; transition:transform .18s ease }
 .soft-item[open] summary::after{ transform:rotate(180deg) }
 
-/* >>> Linha full-bleed e conteúdo */
-.soft-body{
-  margin:0 -12px;                  /* faz a borda ocupar toda a largura do card */
-  border-top:1px dashed var(--stroke);
-  padding:10px 12px;
-  background:#0f141d;
+/* linha e conteúdo dentro do card */
+.soft-body{ padding:10px 12px; background:#0f141d; }
+.soft-body::before{
+  content:""; display:block; border-top:1px dashed var(--stroke);
+  margin:0 0 10px 0;
 }
 .pills{ display:flex; flex-wrap:wrap; gap:8px }
 .pills span{
