@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Luiz Felipe Maciel Mendonça — Portfolio</title>
 
-  <link rel="stylesheet" href="/style.css?v=11" />
-  <!-- Devicon: pack de ícones para stacks -->
+  <link rel="stylesheet" href="/style.css?v=13" />
+  <!-- Devicon: ícones de stacks -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,7 +22,7 @@
       <p class="tag">Aspiring Salesforce Developer · Software Engineering Student</p>
       <p class="bio">
         Estudante de Engenharia de Software. Experiência com PHP/Laravel, Python, APEX, SOQL e MySQL.
-        <strong>Trailhead Explorer 5.475 pts</strong> · <strong>11 badges</strong>.
+        No Trailhead: <strong>Explorer 5.475 pts</strong> · <strong>11 emblemas</strong>.
       </p>
 
       <div class="links">
@@ -57,7 +57,7 @@
     </div>
   </header>
 
-  <!-- SKILLS (apenas ícones) -->
+  <!-- SKILLS (ícones circulares) -->
   <section class="wrap section">
     <h2>Skills</h2>
     <ul class="icon-grid" aria-label="Stacks e ferramentas">
@@ -73,8 +73,8 @@
       <li title="Salesforce"><i class="devicon-salesforce-plain"></i></li>
       <li title="SOQL" class="icon-badge">SOQL</li>
       <li title="Apex" class="icon-badge">Apex</li>
-      <li title="Lightning Web Components" class="icon-badge">LWC</li>
-      <li title="Amazon Web Services"><i class="devicon-amazonwebservices-original"></i></li>
+      <li title="LWC" class="icon-badge">LWC</li>
+      <li title="AWS"><i class="devicon-amazonwebservices-original"></i></li>
       <li title="Git"><i class="devicon-git-plain"></i></li>
       <li title="GitHub"><i class="devicon-github-original"></i></li>
       <li title="Linux"><i class="devicon-linux-plain"></i></li>
@@ -82,48 +82,69 @@
     </ul>
   </section>
 
-  <!-- PROJETOS -->
+  <!-- PROJETOS (com thumbnails à direita) -->
   <section class="wrap section" id="projects">
     <h2>Projetos</h2>
     <ul class="plist">
-      <li>
-        <h3>YOLOv11 — Detecção de Veículos</h3>
-        <p>Detecção exclusiva de veículos em frames de vídeo, métricas e relatório de confiança.
-          <span class="stack">Python · YOLOv11 · ML</span>
-        </p>
-        <div class="row">
-          <a class="mini" href="https://github.com/Fxlipemac/carobjectdetectionmodelyolo_backup" target="_blank" rel="noopener">repositório</a>
+      <li class="project">
+        <div class="p-main">
+          <h3>YOLOv11 — Detecção de Veículos</h3>
+          <p>Detecção exclusiva de veículos em frames de vídeo, métricas e relatório de confiança.
+            <span class="stack">Python · YOLOv11 · ML</span>
+          </p>
+          <div class="row">
+            <a class="mini" href="https://github.com/Fxlipemac/carobjectdetectionmodelyolo_backup" target="_blank" rel="noopener">repositório</a>
+          </div>
         </div>
+        <!-- THUMB do YOLO -->
+        <a class="thumb" href="https://github.com/Fxlipemac/carobjectdetectionmodelyolo_backup" target="_blank" rel="noopener">
+          <img src="img/yolo-thumb.jpg" alt="Frames do dataset com detecções do YOLOv11" loading="lazy" width="160" height="100">
+        </a>
       </li>
 
-      <li>
-        <h3>CRUD — Laravel + MySQL</h3>
-        <p>Autenticação, filtros e relacionamentos. Migrações e seeders para dados de exemplo.
-          <span class="stack">PHP · Laravel · MySQL</span>
-        </p>
-        <div class="row">
-          <a class="mini" href="https://app.rocketseat.com.br/certificates/7561b9e4-d17f-4dcd-9fa9-4a807d4469e1" target="_blank" rel="noopener">certificado</a>
+      <li class="project">
+        <div class="p-main">
+          <h3>CRUD — Laravel + MySQL</h3>
+          <p>Autenticação, filtros e relacionamentos. Migrações e seeders para dados de exemplo.
+            <span class="stack">PHP · Laravel · MySQL</span>
+          </p>
+          <div class="row">
+            <a class="mini" href="https://app.rocketseat.com.br/certificates/7561b9e4-d17f-4dcd-9fa9-4a807d4469e1" target="_blank" rel="noopener">certificado</a>
+          </div>
         </div>
+        <a class="thumb" href="https://app.rocketseat.com.br/certificates/7561b9e4-d17f-4dcd-9fa9-4a807d4469e1" target="_blank" rel="noopener">
+          <img src="img/cert-laravel.png" alt="Certificado Laravel + MySQL" loading="lazy" width="160" height="100">
+        </a>
       </li>
 
-      <li>
-        <h3>Python with Flask</h3>
-        <p>APIs REST, métodos HTTP, banco, autenticação (Flask-Login) e deploy.
-          <span class="stack">Python · Flask · APIs</span>
-        </p>
-        <div class="row">
-          <a class="mini" href="https://app.rocketseat.com.br/certificates/f8bafeca-2312-4324-b896-a7cdd1facce5" target="_blank" rel="noopener">certificado</a>
+      <li class="project">
+        <div class="p-main">
+          <h3>Python with Flask</h3>
+          <p>APIs REST, métodos HTTP, banco, autenticação (Flask-Login) e deploy.
+            <span class="stack">Python · Flask · APIs</span>
+          </p>
+          <div class="row">
+            <a class="mini" href="https://app.rocketseat.com.br/certificates/f8bafeca-2312-4324-b896-a7cdd1facce5" target="_blank" rel="noopener">certificado</a>
+          </div>
         </div>
+        <a class="thumb" href="https://app.rocketseat.com.br/certificates/f8bafeca-2312-4324-b896-a7cdd1facce5" target="_blank" rel="noopener">
+          <img src="img/cert-python-flask.png" alt="Certificado Python com Flask" loading="lazy" width="160" height="100">
+        </a>
       </li>
 
-      <li>
-        <h3>Java Serverless — URL Shortener</h3>
-        <p>AWS Lambda + API Gateway + S3. JSON (Jackson) e Maven.
-          <span class="stack">Java · AWS · Serverless</span>
-        </p>
-        <div class="row">
-          <a class="mini" href="https://app.rocketseat.com.br/certificates/89669057-ef79-46eb-9825-4da6dc7ebe84" target="_blank" rel="noopener">certificado</a>
+      <li class="project">
+        <div class="p-main">
+          <h3>Java Serverless — URL Shortener</h3>
+          <p>AWS Lambda + API Gateway + S3. JSON (Jackson) e Maven.
+            <span class="stack">Java · AWS · Serverless</span>
+          </p>
+          <div class="row">
+            <a class="mini" href="https://app.rocketseat.com.br/certificates/89669057-ef79-46eb-9825-4da6dc7ebe84" target="_blank" rel="noopener">certificado</a>
+          </div>
         </div>
+        <a class="thumb" href="https://app.rocketseat.com.br/certificates/89669057-ef79-46eb-9825-4da6dc7ebe84" target="_blank" rel="noopener">
+          <img src="img/cert-java-serverless.png" alt="Certificado Java Serverless" loading="lazy" width="160" height="100">
+        </a>
       </li>
     </ul>
   </section>
