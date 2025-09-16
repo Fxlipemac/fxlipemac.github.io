@@ -5,13 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Luiz Felipe Maciel Mendonça — Portfolio</title>
 
-  <!-- CSS do projeto -->
-  <link rel="stylesheet" href="/style.css?v=22" />
-
-  <!-- Devicon para os ícones -->
+  <link rel="stylesheet" href="/style.css?v=23" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css" />
-
-  <!-- Fontes -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
   <link rel="icon" href="data:;base64,iVBORw0KGgo=">
@@ -24,8 +19,8 @@
       <h1>Luiz Felipe <span>Maciel Mendonça</span></h1>
       <p class="tag">Aspiring Salesforce Developer · Software Engineering Student</p>
       <p class="bio">
-        PHP/Laravel, Python, APEX, SOQL e MySQL.
-        <strong>Trailhead Explorer 5.475 pts</strong> · <strong>11 badges</strong>.
+        Estudante de Engenharia de Software. Experiência com PHP/Laravel, Python, APEX, SOQL e MySQL.
+        No Trailhead: <strong>Explorer 5.475 pts</strong> · <strong>11 emblemas</strong>.
       </p>
 
       <div class="links">
@@ -50,7 +45,7 @@
       </ul>
     </div>
 
-    <!-- Avatar circular (sem distorção) -->
+    <!-- Avatar circular -->
     <div class="portrait">
       <div class="ring" aria-hidden="true"></div>
       <img src="https://github.com/fxlipemac.png?size=640" alt="Foto de perfil de Luiz Felipe" loading="eager" decoding="async">
@@ -74,7 +69,15 @@
       <li title="SOQL" class="icon-badge">SOQL</li>
       <li title="Apex" class="icon-badge">APEX</li>
       <li title="LWC" class="icon-badge">LWC</li>
-      <li title="AWS"><i class="devicon-amazonwebservices-original"></i></li>
+
+      <!-- AWS com SVG inline para evitar variação de classe do Devicon -->
+      <li title="AWS" class="svgicon" aria-label="AWS">
+        <svg viewBox="0 0 256 256" aria-hidden="true">
+          <path fill="#FF9900" d="M56 196c41 29 103 29 144 0l-10-12c-35 25-89 25-124 0L56 196z"/>
+          <path fill="#D9D9D9" d="M87 64h30v96H87zm52 0h30v96h-30z"/>
+        </svg>
+      </li>
+
       <li title="Git"><i class="devicon-git-plain"></i></li>
       <li title="GitHub"><i class="devicon-github-original"></i></li>
       <li title="Linux"><i class="devicon-linux-plain"></i></li>
@@ -97,7 +100,6 @@
           </div>
         </div>
         <a class="thumb" href="https://github.com/Fxlipemac/carobjectdetectionmodelyolo_backup" target="_blank" rel="noopener">
-          <!-- tenta /img e, se não achar, usa raiz -->
           <img src="/img/carobjectdetection.jpg"
                onerror="this.onerror=null; this.src='carobjectdetection.jpg';"
                alt="Frames do dataset com detecções do YOLOv11" loading="lazy" width="160" height="100">
@@ -161,74 +163,64 @@
   <section class="wrap section">
     <h2>Competências</h2>
     <div class="soft-grid" id="softGrid">
-      <details class="soft-item">
-        <summary>Empatia</summary>
-        <div class="soft-body">
-          <div class="pills"><span>Comunicação</span><span>Colaboração orientada</span><span>Reconhecimento do outro</span></div>
-        </div>
+      <details class="soft-item"><summary>Empatia</summary>
+        <div class="soft-body"><div class="pills">
+          <span>Comunicação</span><span>Colaboração orientada</span><span>Reconhecimento do outro</span>
+        </div></div>
       </details>
 
-      <details class="soft-item">
-        <summary>Autogestão</summary>
-        <div class="soft-body">
-          <div class="pills"><span>Regulação emocional</span><span>Prontidão & senso de urgência</span><span>Inteligência sensitiva</span></div>
-        </div>
+      <details class="soft-item"><summary>Autogestão</summary>
+        <div class="soft-body"><div class="pills">
+          <span>Regulação emocional</span><span>Prontidão & senso de urgência</span><span>Inteligência sensitiva</span>
+        </div></div>
       </details>
 
-      <details class="soft-item">
-        <summary>Criatividade</summary>
-        <div class="soft-body">
-          <div class="pills"><span>Análise & inovação</span><span>Iniciativa & proatividade</span><span>Autonomia</span></div>
-        </div>
+      <details class="soft-item"><summary>Criatividade</summary>
+        <div class="soft-body"><div class="pills">
+          <span>Análise & inovação</span><span>Iniciativa & proatividade</span><span>Autonomia</span>
+        </div></div>
       </details>
 
-      <details class="soft-item">
-        <summary>Produtividade</summary>
-        <div class="soft-body">
-          <div class="pills"><span>Planejamento & organização</span><span>Gestão do tempo</span><span>Adaptabilidade</span><span>Autocontrole & performance</span></div>
-        </div>
+      <details class="soft-item"><summary>Produtividade</summary>
+        <div class="soft-body"><div class="pills">
+          <span>Planejamento & organização</span><span>Gestão do tempo</span><span>Adaptabilidade</span><span>Autocontrole & performance</span>
+        </div></div>
       </details>
 
-      <details class="soft-item">
-        <summary>Resolução de Problemas</summary>
-        <div class="soft-body">
-          <div class="pills"><span>Tomada de decisão</span><span>Problemas complexos</span><span>Mediação de conflitos</span></div>
-        </div>
+      <details class="soft-item"><summary>Resolução de Problemas</summary>
+        <div class="soft-body"><div class="pills">
+          <span>Tomada de decisão</span><span>Problemas complexos</span><span>Mediação de conflitos</span>
+        </div></div>
       </details>
 
-      <details class="soft-item">
-        <summary>Inteligência Emocional</summary>
-        <div class="soft-body">
-          <div class="pills"><span>Disciplina focada</span><span>Aprendizado via feedback</span><span>Gestão de recursos pessoais</span></div>
-        </div>
+      <details class="soft-item"><summary>Inteligência Emocional</summary>
+        <div class="soft-body"><div class="pills">
+          <span>Disciplina focada</span><span>Aprendizado via feedback</span><span>Gestão de recursos pessoais</span>
+        </div></div>
       </details>
 
-      <details class="soft-item">
-        <summary>Pensamento Crítico</summary>
-        <div class="soft-body">
-          <div class="pills"><span>Análise sistêmica</span><span>Raciocínio lógico</span><span>Resolução de problemas</span></div>
-        </div>
+      <details class="soft-item"><summary>Pensamento Crítico</summary>
+        <div class="soft-body"><div class="pills">
+          <span>Análise sistêmica</span><span>Raciocínio lógico</span><span>Resolução de problemas</span>
+        </div></div>
       </details>
 
-      <details class="soft-item">
-        <summary>Persuasão & Negociação</summary>
-        <div class="soft-body">
-          <div class="pills"><span>Comunicação assertiva</span><span>Influência & persuasão</span><span>Competência intercultural</span></div>
-        </div>
+      <details class="soft-item"><summary>Persuasão & Negociação</summary>
+        <div class="soft-body"><div class="pills">
+          <span>Comunicação assertiva</span><span>Influência & persuasão</span><span>Competência intercultural</span>
+        </div></div>
       </details>
 
-      <details class="soft-item">
-        <summary>Relacionamento Interpessoal</summary>
-        <div class="soft-body">
-          <div class="pills"><span>Relacionamento & adaptabilidade</span><span>Flexibilidade</span><span>Aprendizado ativo</span></div>
-        </div>
+      <details class="soft-item"><summary>Relacionamento Interpessoal</summary>
+        <div class="soft-body"><div class="pills">
+          <span>Relacionamento & adaptabilidade</span><span>Flexibilidade</span><span>Aprendizado ativo</span>
+        </div></div>
       </details>
 
-      <details class="soft-item">
-        <summary>Autoconhecimento</summary>
-        <div class="soft-body">
-          <div class="pills"><span>Identificação de potencial</span><span>Resiliência</span><span>Motivação</span><span>Coragem</span></div>
-        </div>
+      <details class="soft-item"><summary>Autoconhecimento</summary>
+        <div class="soft-body"><div class="pills">
+          <span>Identificação de potencial</span><span>Resiliência</span><span>Motivação</span><span>Coragem</span>
+        </div></div>
       </details>
     </div>
   </section>
@@ -239,19 +231,16 @@
   </footer>
 
   <script>
-    // ano do rodapé
+    // ano no rodapé
     document.getElementById('y').textContent = new Date().getFullYear();
 
-    // Accordion: abre só 1 competência por vez (sem “bugar” as outras)
-    const items = [...document.querySelectorAll('.soft-item')];
-    const summaries = document.querySelectorAll('.soft-item > summary');
-    summaries.forEach(s => {
-      s.addEventListener('click', e => {
-        e.preventDefault();                 // cancela toggle nativo
-        const d = s.parentElement;
-        const willOpen = !d.hasAttribute('open');
-        items.forEach(o => o.removeAttribute('open'));
-        if (willOpen) d.setAttribute('open','');
+    // Accordion robusto: abre só 1 por vez usando 'toggle'
+    const detailsList = Array.from(document.querySelectorAll('.soft-item'));
+    detailsList.forEach(d => {
+      d.addEventListener('toggle', () => {
+        if (d.open) {
+          detailsList.forEach(o => { if (o !== d) o.open = false; });
+        }
       });
     });
   </script>
