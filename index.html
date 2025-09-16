@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Luiz Felipe Maciel Mendonça — Portfolio</title>
 
-  <link rel="stylesheet" href="/style.css?v=33" />
+  <!-- atualize a querystring sempre que trocar o CSS -->
+  <link rel="stylesheet" href="/style.css?v=40" />
+
+  <!-- Devicons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -61,6 +64,7 @@
 
       <li title="Salesforce (Plataforma)"><i class="devicon-salesforce-plain"></i></li>
 
+      <!-- SOQL (mono) -->
       <li class="svgicon mono" title="SOQL" aria-label="SOQL">
         <svg viewBox="0 0 64 64" aria-hidden="true">
           <ellipse cx="26" cy="18" rx="12" ry="6"/>
@@ -70,6 +74,7 @@
         </svg>
       </li>
 
+      <!-- Apex (mono) -->
       <li class="svgicon mono" title="Apex" aria-label="Apex">
         <svg viewBox="0 0 64 64" aria-hidden="true">
           <circle cx="26" cy="30" r="10"/>
@@ -79,6 +84,7 @@
         </svg>
       </li>
 
+      <!-- LWC (mono) -->
       <li class="svgicon mono" title="LWC" aria-label="LWC">
         <svg viewBox="0 0 64 64" aria-hidden="true">
           <rect x="14" y="32" width="20" height="12" rx="2"/>
@@ -88,6 +94,7 @@
         </svg>
       </li>
 
+      <!-- AWS (mono) -->
       <li class="svgicon mono" title="AWS" aria-label="AWS">
         <svg viewBox="0 0 64 64" aria-hidden="true">
           <path d="M14 46c10 8 26 8 36 0" stroke-linecap="round"/>
@@ -105,7 +112,7 @@
     </ul>
   </section>
 
-  <!-- PROJETOS (igual ao anterior) -->
+  <!-- PROJETOS -->
   <section class="wrap section" id="projects">
     <h2>Projetos</h2>
     <ul class="plist">
@@ -171,20 +178,103 @@
     </ul>
   </section>
 
-  <!-- COMPETÊNCIAS — NOVO LAYOUT -->
+  <!-- COMPETÊNCIAS — NOVO ACCORDION -->
   <section class="wrap section">
     <h2>Competências</h2>
-    <div class="soft-matrix" id="softMatrix" data-single="false">
-      <article class="soft-card"><button class="soft-head" type="button"><span>Empatia</span><span class="chev" aria-hidden="true"></span></button><div class="soft-content"><div class="pills"><span>Comunicação</span><span>Colaboração orientada</span><span>Reconhecimento do outro</span></div></div></article>
-      <article class="soft-card"><button class="soft-head" type="button"><span>Autogestão</span><span class="chev" aria-hidden="true"></span></button><div class="soft-content"><div class="pills"><span>Regulação emocional</span><span>Prontidão & senso de urgência</span><span>Inteligência sensitiva</span></div></div></article>
-      <article class="soft-card"><button class="soft-head" type="button"><span>Criatividade</span><span class="chev" aria-hidden="true"></span></button><div class="soft-content"><div class="pills"><span>Análise & inovação</span><span>Iniciativa & proatividade</span><span>Autonomia</span></div></div></article>
-      <article class="soft-card"><button class="soft-head" type="button"><span>Produtividade</span><span class="chev" aria-hidden="true"></span></button><div class="soft-content"><div class="pills"><span>Planejamento & organização</span><span>Gestão do tempo</span><span>Adaptabilidade</span><span>Autocontrole & performance</span></div></div></article>
-      <article class="soft-card"><button class="soft-head" type="button"><span>Resolução de Problemas</span><span class="chev" aria-hidden="true"></span></button><div class="soft-content"><div class="pills"><span>Tomada de decisão</span><span>Problemas complexos</span><span>Mediação de conflitos</span></div></div></article>
-      <article class="soft-card"><button class="soft-head" type="button"><span>Inteligência Emocional</span><span class="chev" aria-hidden="true"></span></button><div class="soft-content"><div class="pills"><span>Disciplina focada</span><span>Aprendizado via feedback</span><span>Gestão de recursos pessoais</span></div></div></article>
-      <article class="soft-card"><button class="soft-head" type="button"><span>Pensamento Crítico</span><span class="chev" aria-hidden="true"></span></button><div class="soft-content"><div class="pills"><span>Análise sistêmica</span><span>Raciocínio lógico</span><span>Resolução de problemas</span></div></div></article>
-      <article class="soft-card"><button class="soft-head" type="button"><span>Persuasão & Negociação</span><span class="chev" aria-hidden="true"></span></button><div class="soft-content"><div class="pills"><span>Comunicação assertiva</span><span>Influência & persuasão</span><span>Competência intercultural</span></div></div></article>
-      <article class="soft-card"><button class="soft-head" type="button"><span>Relacionamento Interpessoal</span><span class="chev" aria-hidden="true"></span></button><div class="soft-content"><div class="pills"><span>Relacionamento & adaptabilidade</span><span>Flexibilidade</span><span>Aprendizado ativo</span></div></div></article>
-      <article class="soft-card"><button class="soft-head" type="button"><span>Autoconhecimento</span><span class="chev" aria-hidden="true"></span></button><div class="soft-content"><div class="pills"><span>Identificação de potencial</span><span>Resiliência</span><span>Motivação</span><span>Coragem</span></div></div></article>
+
+    <!-- data-single="true" para abrir apenas uma por vez -->
+    <div class="acc acc--grid" id="accSoft" data-single="true">
+
+      <div class="acc-item">
+        <button class="acc-btn" type="button" aria-expanded="false">
+          <span>Empatia</span><svg width="12" height="12" viewBox="0 0 12 12" class="acc-chev"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        </button>
+        <div class="acc-panel">
+          <ul class="pills"><li>Comunicação</li><li>Colaboração orientada</li><li>Reconhecimento do outro</li></ul>
+        </div>
+      </div>
+
+      <div class="acc-item">
+        <button class="acc-btn" type="button" aria-expanded="false">
+          <span>Autogestão</span><svg width="12" height="12" viewBox="0 0 12 12" class="acc-chev"><path d="M2 4l4 4 4-4"/></svg>
+        </button>
+        <div class="acc-panel">
+          <ul class="pills"><li>Regulação emocional</li><li>Prontidão & senso de urgência</li><li>Inteligência sensitiva</li></ul>
+        </div>
+      </div>
+
+      <div class="acc-item">
+        <button class="acc-btn" type="button" aria-expanded="false">
+          <span>Criatividade</span><svg width="12" height="12" viewBox="0 0 12 12" class="acc-chev"><path d="M2 4l4 4 4-4"/></svg>
+        </button>
+        <div class="acc-panel">
+          <ul class="pills"><li>Análise & inovação</li><li>Iniciativa & proatividade</li><li>Autonomia</li></ul>
+        </div>
+      </div>
+
+      <div class="acc-item">
+        <button class="acc-btn" type="button" aria-expanded="false">
+          <span>Produtividade</span><svg width="12" height="12" viewBox="0 0 12 12" class="acc-chev"><path d="M2 4l4 4 4-4"/></svg>
+        </button>
+        <div class="acc-panel">
+          <ul class="pills"><li>Planejamento & organização</li><li>Gestão do tempo</li><li>Adaptabilidade</li><li>Autocontrole & performance</li></ul>
+        </div>
+      </div>
+
+      <div class="acc-item">
+        <button class="acc-btn" type="button" aria-expanded="false">
+          <span>Resolução de Problemas</span><svg width="12" height="12" viewBox="0 0 12 12" class="acc-chev"><path d="M2 4l4 4 4-4"/></svg>
+        </button>
+        <div class="acc-panel">
+          <ul class="pills"><li>Tomada de decisão</li><li>Problemas complexos</li><li>Mediação de conflitos</li></ul>
+        </div>
+      </div>
+
+      <div class="acc-item">
+        <button class="acc-btn" type="button" aria-expanded="false">
+          <span>Inteligência Emocional</span><svg width="12" height="12" viewBox="0 0 12 12" class="acc-chev"><path d="M2 4l4 4 4-4"/></svg>
+        </button>
+        <div class="acc-panel">
+          <ul class="pills"><li>Disciplina focada</li><li>Aprendizado via feedback</li><li>Gestão de recursos pessoais</li></ul>
+        </div>
+      </div>
+
+      <div class="acc-item">
+        <button class="acc-btn" type="button" aria-expanded="false">
+          <span>Pensamento Crítico</span><svg width="12" height="12" viewBox="0 0 12 12" class="acc-chev"><path d="M2 4l4 4 4-4"/></svg>
+        </button>
+        <div class="acc-panel">
+          <ul class="pills"><li>Análise sistêmica</li><li>Raciocínio lógico</li><li>Resolução de problemas</li></ul>
+        </div>
+      </div>
+
+      <div class="acc-item">
+        <button class="acc-btn" type="button" aria-expanded="false">
+          <span>Persuasão & Negociação</span><svg width="12" height="12" viewBox="0 0 12 12" class="acc-chev"><path d="M2 4l4 4 4-4"/></svg>
+        </button>
+        <div class="acc-panel">
+          <ul class="pills"><li>Comunicação assertiva</li><li>Influência & persuasão</li><li>Competência intercultural</li></ul>
+        </div>
+      </div>
+
+      <div class="acc-item">
+        <button class="acc-btn" type="button" aria-expanded="false">
+          <span>Relacionamento Interpessoal</span><svg width="12" height="12" viewBox="0 0 12 12" class="acc-chev"><path d="M2 4l4 4 4-4"/></svg>
+        </button>
+        <div class="acc-panel">
+          <ul class="pills"><li>Relacionamento & adaptabilidade</li><li>Flexibilidade</li><li>Aprendizado ativo</li></ul>
+        </div>
+      </div>
+
+      <div class="acc-item">
+        <button class="acc-btn" type="button" aria-expanded="false">
+          <span>Autoconhecimento</span><svg width="12" height="12" viewBox="0 0 12 12" class="acc-chev"><path d="M2 4l4 4 4-4"/></svg>
+        </button>
+        <div class="acc-panel">
+          <ul class="pills"><li>Identificação de potencial</li><li>Resiliência</li><li>Motivação</li><li>Coragem</li></ul>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -225,15 +315,22 @@
   <script>
     document.getElementById('y').textContent = new Date().getFullYear();
 
-    // Accordion das competências (sem <details>)
-    const matrix = document.getElementById('softMatrix');
-    const single = matrix?.dataset.single === 'true'; // troque para true se quiser apenas 1 aberto
-    matrix.querySelectorAll('.soft-head').forEach(btn => {
+    // Accordion robusto (sem <details>)
+    const acc = document.getElementById('accSoft');
+    const single = acc.dataset.single === 'true';
+    acc.querySelectorAll('.acc-btn').forEach(btn => {
       btn.addEventListener('click', () => {
-        const card = btn.closest('.soft-card');
-        const isOpen = card.classList.contains('open');
-        if (single) matrix.querySelectorAll('.soft-card.open').forEach(c => c.classList.remove('open'));
-        card.classList.toggle('open', !isOpen);
+        const item = btn.closest('.acc-item');
+        const open = item.classList.toggle('open');
+        btn.setAttribute('aria-expanded', open);
+        if (single) {
+          acc.querySelectorAll('.acc-item').forEach(i => {
+            if (i !== item) {
+              i.classList.remove('open');
+              i.querySelector('.acc-btn').setAttribute('aria-expanded', 'false');
+            }
+          });
+        }
       });
     });
   </script>
