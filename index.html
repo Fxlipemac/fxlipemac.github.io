@@ -5,8 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Luiz Felipe Maciel Mendonça — Portfolio</title>
 
-  <link rel="stylesheet" href="/style.css?v=21" />
+  <!-- CSS do projeto -->
+  <link rel="stylesheet" href="/style.css?v=22" />
+
+  <!-- Devicon para os ícones -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css" />
+
+  <!-- Fontes -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
   <link rel="icon" href="data:;base64,iVBORw0KGgo=">
@@ -45,30 +50,208 @@
       </ul>
     </div>
 
-    <!-- avatar com diâmetro fixo (quadrado) -->
+    <!-- Avatar circular (sem distorção) -->
     <div class="portrait">
       <div class="ring" aria-hidden="true"></div>
-      <!-- remova os atributos width/height para evitar distorção -->
       <img src="https://github.com/fxlipemac.png?size=640" alt="Foto de perfil de Luiz Felipe" loading="eager" decoding="async">
     </div>
   </header>
 
-  <!-- demais seções… (sem alterações) -->
-  <!-- ... tudo que você já tem abaixo (skills, projetos, competências, footer, scripts) ... -->
+  <!-- SKILLS -->
+  <section class="wrap section">
+    <h2>Skills</h2>
+    <ul class="icon-grid" aria-label="Stacks e ferramentas">
+      <li title="HTML5"><i class="devicon-html5-plain"></i></li>
+      <li title="CSS3"><i class="devicon-css3-plain"></i></li>
+      <li title="Python"><i class="devicon-python-plain"></i></li>
+      <li title="Flask"><i class="devicon-flask-original"></i></li>
+      <li title="C"><i class="devicon-c-plain"></i></li>
+      <li title="PHP"><i class="devicon-php-plain"></i></li>
+      <li title="Laravel"><i class="devicon-laravel-plain"></i></li>
+      <li title="MySQL"><i class="devicon-mysql-plain"></i></li>
+      <li title="MySQL Workbench" class="icon-badge">WB</li>
+      <li title="Salesforce"><i class="devicon-salesforce-plain"></i></li>
+      <li title="SOQL" class="icon-badge">SOQL</li>
+      <li title="Apex" class="icon-badge">APEX</li>
+      <li title="LWC" class="icon-badge">LWC</li>
+      <li title="AWS"><i class="devicon-amazonwebservices-original"></i></li>
+      <li title="Git"><i class="devicon-git-plain"></i></li>
+      <li title="GitHub"><i class="devicon-github-original"></i></li>
+      <li title="Linux"><i class="devicon-linux-plain"></i></li>
+      <li title="Windows"><i class="devicon-windows8-original"></i></li>
+    </ul>
+  </section>
+
+  <!-- PROJETOS -->
+  <section class="wrap section" id="projects">
+    <h2>Projetos</h2>
+    <ul class="plist">
+      <li class="project">
+        <div class="p-main">
+          <h3>YOLOv11 — Detecção de Veículos</h3>
+          <p>Detecção exclusiva de veículos em frames de vídeo, métricas e relatório de confiança.
+            <span class="stack">Python · YOLOv11 · ML</span>
+          </p>
+          <div class="row">
+            <a class="mini" href="https://github.com/Fxlipemac/carobjectdetectionmodelyolo_backup" target="_blank" rel="noopener">repositório</a>
+          </div>
+        </div>
+        <a class="thumb" href="https://github.com/Fxlipemac/carobjectdetectionmodelyolo_backup" target="_blank" rel="noopener">
+          <!-- tenta /img e, se não achar, usa raiz -->
+          <img src="/img/carobjectdetection.jpg"
+               onerror="this.onerror=null; this.src='carobjectdetection.jpg';"
+               alt="Frames do dataset com detecções do YOLOv11" loading="lazy" width="160" height="100">
+        </a>
+      </li>
+
+      <li class="project">
+        <div class="p-main">
+          <h3>CRUD — Laravel + MySQL</h3>
+          <p>Autenticação, filtros e relacionamentos. Migrações e seeders para dados de exemplo.
+            <span class="stack">PHP · Laravel · MySQL</span>
+          </p>
+          <div class="row">
+            <a class="mini" href="https://app.rocketseat.com.br/certificates/7561b9e4-d17f-4dcd-9fa9-4a807d4469e1" target="_blank" rel="noopener">certificado</a>
+          </div>
+        </div>
+        <a class="thumb" href="https://app.rocketseat.com.br/certificates/7561b9e4-d17f-4dcd-9fa9-4a807d4469e1" target="_blank" rel="noopener">
+          <img src="/img/php_certificado.png"
+               onerror="this.onerror=null; this.src='php_certificado.png';"
+               alt="Certificado Laravel + MySQL (Rocketseat)" loading="lazy" width="160" height="100">
+        </a>
+      </li>
+
+      <li class="project">
+        <div class="p-main">
+          <h3>Python with Flask</h3>
+          <p>APIs REST, métodos HTTP, banco, autenticação (Flask-Login) e deploy.
+            <span class="stack">Python · Flask · APIs</span>
+          </p>
+          <div class="row">
+            <a class="mini" href="https://app.rocketseat.com.br/certificates/f8bafeca-2312-4324-b896-a7cdd1facce5" target="_blank" rel="noopener">certificado</a>
+          </div>
+        </div>
+        <a class="thumb" href="https://app.rocketseat.com.br/certificates/f8bafeca-2312-4324-b896-a7cdd1facce5" target="_blank" rel="noopener">
+          <img src="/img/python_certificado.png"
+               onerror="this.onerror=null; this.src='python_certificado.png';"
+               alt="Certificado Python com Flask (Rocketseat)" loading="lazy" width="160" height="100">
+        </a>
+      </li>
+
+      <li class="project">
+        <div class="p-main">
+          <h3>Java Serverless — URL Shortener</h3>
+          <p>AWS Lambda + API Gateway + S3. JSON (Jackson) e Maven.
+            <span class="stack">Java · AWS · Serverless</span>
+          </p>
+          <div class="row">
+            <a class="mini" href="https://app.rocketseat.com.br/certificates/89669057-ef79-46eb-9825-4da6dc7ebe84" target="_blank" rel="noopener">certificado</a>
+          </div>
+        </div>
+        <a class="thumb" href="https://app.rocketseat.com.br/certificates/89669057-ef79-46eb-9825-4da6dc7ebe84" target="_blank" rel="noopener">
+          <img src="/img/java_certificado.png"
+               onerror="this.onerror=null; this.src='java_certificado.png';"
+               alt="Certificado Java Serverless (Rocketseat)" loading="lazy" width="160" height="100">
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <!-- COMPETÊNCIAS -->
+  <section class="wrap section">
+    <h2>Competências</h2>
+    <div class="soft-grid" id="softGrid">
+      <details class="soft-item">
+        <summary>Empatia</summary>
+        <div class="soft-body">
+          <div class="pills"><span>Comunicação</span><span>Colaboração orientada</span><span>Reconhecimento do outro</span></div>
+        </div>
+      </details>
+
+      <details class="soft-item">
+        <summary>Autogestão</summary>
+        <div class="soft-body">
+          <div class="pills"><span>Regulação emocional</span><span>Prontidão & senso de urgência</span><span>Inteligência sensitiva</span></div>
+        </div>
+      </details>
+
+      <details class="soft-item">
+        <summary>Criatividade</summary>
+        <div class="soft-body">
+          <div class="pills"><span>Análise & inovação</span><span>Iniciativa & proatividade</span><span>Autonomia</span></div>
+        </div>
+      </details>
+
+      <details class="soft-item">
+        <summary>Produtividade</summary>
+        <div class="soft-body">
+          <div class="pills"><span>Planejamento & organização</span><span>Gestão do tempo</span><span>Adaptabilidade</span><span>Autocontrole & performance</span></div>
+        </div>
+      </details>
+
+      <details class="soft-item">
+        <summary>Resolução de Problemas</summary>
+        <div class="soft-body">
+          <div class="pills"><span>Tomada de decisão</span><span>Problemas complexos</span><span>Mediação de conflitos</span></div>
+        </div>
+      </details>
+
+      <details class="soft-item">
+        <summary>Inteligência Emocional</summary>
+        <div class="soft-body">
+          <div class="pills"><span>Disciplina focada</span><span>Aprendizado via feedback</span><span>Gestão de recursos pessoais</span></div>
+        </div>
+      </details>
+
+      <details class="soft-item">
+        <summary>Pensamento Crítico</summary>
+        <div class="soft-body">
+          <div class="pills"><span>Análise sistêmica</span><span>Raciocínio lógico</span><span>Resolução de problemas</span></div>
+        </div>
+      </details>
+
+      <details class="soft-item">
+        <summary>Persuasão & Negociação</summary>
+        <div class="soft-body">
+          <div class="pills"><span>Comunicação assertiva</span><span>Influência & persuasão</span><span>Competência intercultural</span></div>
+        </div>
+      </details>
+
+      <details class="soft-item">
+        <summary>Relacionamento Interpessoal</summary>
+        <div class="soft-body">
+          <div class="pills"><span>Relacionamento & adaptabilidade</span><span>Flexibilidade</span><span>Aprendizado ativo</span></div>
+        </div>
+      </details>
+
+      <details class="soft-item">
+        <summary>Autoconhecimento</summary>
+        <div class="soft-body">
+          <div class="pills"><span>Identificação de potencial</span><span>Resiliência</span><span>Motivação</span><span>Coragem</span></div>
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer class="wrap foot">
+    <p>© <span id="y"></span> Luiz Felipe Maciel Mendonça</p>
+  </footer>
 
   <script>
-    document.getElementById('y') && (document.getElementById('y').textContent = new Date().getFullYear());
+    // ano do rodapé
+    document.getElementById('y').textContent = new Date().getFullYear();
 
-    // Accordion: apenas 1 competência aberta por vez
+    // Accordion: abre só 1 competência por vez (sem “bugar” as outras)
     const items = [...document.querySelectorAll('.soft-item')];
     const summaries = document.querySelectorAll('.soft-item > summary');
     summaries.forEach(s => {
       s.addEventListener('click', e => {
-        e.preventDefault();
+        e.preventDefault();                 // cancela toggle nativo
         const d = s.parentElement;
         const willOpen = !d.hasAttribute('open');
         items.forEach(o => o.removeAttribute('open'));
-        if (willOpen) d.setAttribute('open', '');
+        if (willOpen) d.setAttribute('open','');
       });
     });
   </script>
