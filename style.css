@@ -7,6 +7,9 @@
   --brand-dark:#2563eb;
   --stroke:#232a35;
   --chip:#1b2230;
+
+  /* tamanho do avatar (sempre quadrado) */
+  --avatar-size: clamp(220px, 34vw, 300px);
 }
 
 *{box-sizing:border-box}
@@ -46,18 +49,31 @@ body{
 .factline{display:flex;gap:12px;flex-wrap:wrap;margin:8px 0 0 0;padding:0;list-style:none}
 .factline li{background:#101620;border:1px solid var(--stroke);padding:6px 10px;border-radius:999px;color:#b4c0d3;font-weight:600}
 
-/* Foto circular */
-.portrait{position:relative;display:grid;place-items:center}
+/* ===== Avatar 100% circular ===== */
+.portrait{
+  position:relative;
+  width:var(--avatar-size);
+  height:var(--avatar-size);         /* garante quadrado */
+  display:grid; place-items:center;
+  justify-self:center;
+}
 .portrait .ring{
-  position:absolute;z-index:0;width:clamp(260px,42vw,380px);aspect-ratio:1;border-radius:50%;
+  position:absolute; z-index:0;
+  width:calc(var(--avatar-size) + 40px);
+  height:calc(var(--avatar-size) + 40px);     /* mesmo diâmetro do glow */
+  border-radius:50%;
   background:
     radial-gradient(60% 60% at 55% 45%, rgba(59,130,246,.35), transparent 65%),
     conic-gradient(from 220deg, rgba(37,99,235,.38), rgba(59,130,246,.55), rgba(37,99,235,.38));
-  filter:blur(16px); opacity:.6;
+  filter:blur(18px); opacity:.6;
 }
 .portrait img{
-  position:relative;z-index:1;width:clamp(200px,34vw,300px);aspect-ratio:1;border-radius:50%;
-  object-fit:cover;display:block;background:#0f1a2a;border:6px solid #0e1420;
+  position:relative; z-index:1;
+  width:100%; height:100%;            /* largura = altura */
+  border-radius:50%;
+  object-fit:cover; display:block;
+  background:#0f1a2a;
+  border:6px solid #0e1420;
   box-shadow:0 12px 36px rgba(2,8,20,.6);
 }
 
@@ -79,6 +95,7 @@ body{
 .icon-badge{
   background:#0f1624; color:#79a1ff; font-weight:800; border:1px solid #24314a;
   letter-spacing:.02em; font-size:.8rem; text-transform:uppercase;
+  font-family:"JetBrains Mono", ui-monospace, monospace;
 }
 
 /* Projetos (texto + thumb) */
@@ -109,7 +126,7 @@ body{
 .thumb:hover{ transform:translateY(-2px); box-shadow:0 16px 30px rgba(4,10,25,.36); border-color:#2a3342 }
 .thumb img{ width:100%; height:100%; object-fit:cover; display:block }
 
-/* Competências (3 colunas + accordion) */
+/* Competências (grid/accordion) */
 .soft-grid{ display:grid; gap:12px; grid-template-columns:repeat(3,minmax(0,1fr)) }
 @media (max-width:960px){ .soft-grid{grid-template-columns:repeat(2,1fr)} }
 @media (max-width:640px){ .soft-grid{grid-template-columns:1fr} }
@@ -122,13 +139,8 @@ body{
 .soft-item summary::-webkit-details-marker{display:none}
 .soft-item summary::after{ content:"▾"; color:#9ec1ff; transition:transform .18s ease }
 .soft-item[open] summary::after{ transform:rotate(180deg) }
-
-/* linha e conteúdo dentro do card */
-.soft-body{ padding:10px 12px; background:#0f141d; }
-.soft-body::before{
-  content:""; display:block; border-top:1px dashed var(--stroke);
-  margin:0 0 10px 0;
-}
+.soft-body{ padding:10px 12px; background:#0f141d }
+.soft-body::before{ content:""; display:block; border-top:1px dashed var(--stroke); margin:0 0 10px 0 }
 .pills{ display:flex; flex-wrap:wrap; gap:8px }
 .pills span{
   padding:6px 10px; border-radius:999px; font-weight:700; font-size:.92rem;
