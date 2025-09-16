@@ -8,7 +8,6 @@
   --stroke:#232a35;
   --chip:#1b2230;
 
-  /* diâmetro do avatar (sempre quadrado) */
   --avatar-size: clamp(220px, 34vw, 300px);
 }
 
@@ -49,11 +48,11 @@ body{
 .factline{display:flex;gap:12px;flex-wrap:wrap;margin:8px 0 0 0;padding:0;list-style:none}
 .factline li{background:#101620;border:1px solid var(--stroke);padding:6px 10px;border-radius:999px;color:#b4c0d3;font-weight:600}
 
-/* ===== Avatar 100% circular ===== */
+/* Avatar circular */
 .portrait{
   position:relative;
   width:var(--avatar-size);
-  height:var(--avatar-size);      /* garante quadrado */
+  height:var(--avatar-size);
   display:grid; place-items:center;
   justify-self:center;
 }
@@ -81,14 +80,14 @@ body{
 .section{padding:22px 0 8px}
 .section h2{margin:0 0 14px 0;font-size:1.35rem}
 
-/* Skills: ícones circulares */
+/* Skills */
 .icon-grid{ list-style:none; padding:0; margin:8px 0 0 0; display:flex; flex-wrap:wrap; gap:12px }
-.icon-grid li, .icon-badge{
+.icon-grid li, .icon-badge, .svgicon{
   width:56px; height:56px; display:grid; place-items:center;
   background:#0f1319; border:1px solid var(--stroke); border-radius:999px;
   color:#c4ccd9; transition:transform .15s ease, box-shadow .15s ease, border-color .15s ease;
 }
-.icon-grid li:hover, .icon-badge:hover{
+.icon-grid li:hover, .icon-badge:hover, .svgicon:hover{
   transform:translateY(-2px); box-shadow:0 10px 20px rgba(4,10,25,.35); border-color:#2a3342
 }
 .icon-grid i{ font-size:26px; line-height:1; filter:grayscale(100%) contrast(100%) brightness(95%) }
@@ -97,8 +96,9 @@ body{
   letter-spacing:.02em; font-size:.8rem; text-transform:uppercase;
   font-family:"JetBrains Mono", ui-monospace, monospace;
 }
+.svgicon svg{ width:28px; height:28px; display:block; }
 
-/* Projetos (texto + thumb) */
+/* Projetos */
 .plist{list-style:none;margin:0;padding:0}
 .project{
   display:grid; grid-template-columns:1fr auto; gap:16px;
@@ -126,7 +126,7 @@ body{
 .thumb:hover{ transform:translateY(-2px); box-shadow:0 16px 30px rgba(4,10,25,.36); border-color:#2a3342 }
 .thumb img{ width:100%; height:100%; object-fit:cover; display:block }
 
-/* Competências (grid + accordion estável) */
+/* Competências */
 .soft-grid{ display:grid; gap:12px; grid-template-columns:repeat(3,minmax(0,1fr)) }
 @media (max-width:960px){ .soft-grid{grid-template-columns:repeat(2,1fr)} }
 @media (max-width:640px){ .soft-grid{grid-template-columns:1fr} }
