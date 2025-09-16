@@ -5,10 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Luiz Felipe Maciel Mendonça — Portfolio</title>
 
-  <!-- atualize a querystring sempre que trocar o CSS -->
-  <link rel="stylesheet" href="/style.css?v=40" />
-
-  <!-- Devicons -->
+  <link rel="stylesheet" href="/style.css?v=28" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -62,49 +59,70 @@
       <li title="Laravel"><i class="devicon-laravel-plain"></i></li>
       <li title="MySQL"><i class="devicon-mysql-plain"></i></li>
 
-      <li title="Salesforce (Plataforma)"><i class="devicon-salesforce-plain"></i></li>
+      <li title="Salesforce"><i class="devicon-salesforce-plain"></i></li>
 
-      <!-- SOQL (mono) -->
-      <li class="svgicon mono" title="SOQL" aria-label="SOQL">
+      <!-- SOQL -->
+      <li class="svgicon" title="SOQL" aria-label="SOQL">
         <svg viewBox="0 0 64 64" aria-hidden="true">
-          <ellipse cx="26" cy="18" rx="12" ry="6"/>
-          <path d="M14 18v10c0 3 5.4 5.5 12 5.5s12-2.5 12-5.5V18"/>
-          <circle cx="44" cy="44" r="8"/>
-          <path d="M50 50l6 6" stroke-linecap="round"/>
+          <ellipse cx="26" cy="18" rx="12" ry="6" fill="none" stroke="currentColor" stroke-width="3"/>
+          <path d="M14 18v10c0 3 5.4 5.5 12 5.5s12-2.5 12-5.5V18" fill="none" stroke="currentColor" stroke-width="3"/>
+          <circle cx="44" cy="44" r="8" fill="none" stroke="currentColor" stroke-width="3"/>
+          <path d="M50 50l6 6" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
         </svg>
       </li>
 
-      <!-- Apex (mono) -->
-      <li class="svgicon mono" title="Apex" aria-label="Apex">
+      <!-- APEX (badge-like) -->
+      <li class="svgicon" title="Apex" aria-label="Apex">
         <svg viewBox="0 0 64 64" aria-hidden="true">
-          <circle cx="26" cy="30" r="10"/>
-          <circle cx="42" cy="22" r="6"/>
-          <path d="M26 18v-3M26 45v-3M16 30h-3M39 30h-3M21 21l-2-2M33 39l-2-2M21 39l-2 2M33 21l-2 2"/>
-          <path d="M42 14v-2M42 30v-2M35 22h-2M51 22h-2M38 17l-1-2M47 27l-1-2M38 27l-1 2M47 17l-1 2"/>
+          <circle cx="32" cy="32" r="28" fill="#7ECF7A" stroke="#000" stroke-width="4"/>
+          <g stroke="#000" stroke-opacity=".25" stroke-width="1">
+            <g><line x1="12" y1="16" x2="52" y2="16"/><line x1="12" y1="22" x2="52" y2="22"/><line x1="12" y1="28" x2="52" y2="28"/><line x1="12" y1="34" x2="52" y2="34"/><line x1="12" y1="40" x2="52" y2="40"/><line x1="12" y1="46" x2="52" y2="46"/></g>
+            <g><line x1="16" y1="12" x2="16" y2="52"/><line x1="22" y1="12" x2="22" y2="52"/><line x1="28" y1="12" x2="28" y2="52"/><line x1="34" y1="12" x2="34" y2="52"/><line x1="40" y1="12" x2="40" y2="52"/><line x1="46" y1="12" x2="46" y2="52"/></g>
+          </g>
+          <g transform="translate(24,38) scale(1.15) translate(-12,-12)">
+            <path fill="#F2C21A" d="M11.49 2.27a1 1 0 0 1 1.02 0l1.67.96a8.97 8.97 0 0 1 2.6-.97l.36-1.9a1 1 0 0 1 .98-.8h2a1 1 0 0 1 .98.8l.36 1.9a8.97 8.97 0 0 1 2.6.97l1.67-.96a1 1 0 0 1 1.37.37l1 1.73a1 1 0 0 1-.24 1.28l-1.52 1.2c.22.57.38 1.17.47 1.79h1.92a1 1 0 0 1 1 .84l.33 1.92a1 1 0 0 1-1 1.16h-1.92c-.1.62-.26 1.22-.47 1.79l1.52 1.2a1 1 0 0 1 .24 1.28l-1 1.73a1 1 0 0 1-1.37.37l-1.67-.96c-.8.42-1.68.73-2.6.97l-.36 1.9a1 1 0 0 1-.98.8h-2a1 1 0 0 1-.98-.8l-.36-1.9a8.97 8.97 0 0 1-2.6-.97l-1.67.96a1 1 0 0 1-1.37-.37l-1-1.73a1 1 0 0 1 .24-1.28l1.52-1.2a8.7 8.7 0 0 1-.47-1.79H2.5a1 1 0 0 1-1-.84L1.17 12a1 1 0 0 1 1-1.16h1.92c.1-.62.26-1.22.47-1.79L3.96 7.85a1 1 0 0 1-.24-1.28l1-1.73a1 1 0 0 1 1.37-.37l1.67.96c.8-.42 1.68-.73 2.6-.97l.36-1.9zM12 14a3 3 0 1 0 6 0 3 3 0 0 0-6 0z"/>
+          </g>
+          <g transform="translate(44,22) scale(0.75) translate(-12,-12)">
+            <path fill="#FFFFFF" d="M11.49 2.27a1 1 0 0 1 1.02 0l1.67.96a8.97 8.97 0 0 1 2.6-.97l.36-1.9a1 1 0 0 1 .98-.8h2a1 1 0 0 1 .98.8l.36 1.9a8.97 8.97 0 0 1 2.6.97l1.67-.96a1 1 0 0 1 1.37.37l1 1.73a1 1 0 0 1-.24 1.28l-1.52 1.2c.22.57.38 1.17.47 1.79h1.92a1 1 0 0 1 1 .84l.33 1.92a1 1 0 0 1-1 1.16h-1.92c-.1.62-.26 1.22-.47 1.79l1.52 1.2a1 1 0 0 1 .24 1.28l-1 1.73a1 1 0 0 1-1.37.37l-1.67-.96c-.8.42-1.68.73-2.6.97l-.36 1.9a1 1 0 0 1-.98.8h-2a1 1 0 0 1-.98-.8l-.36-1.9a8.97 8.97 0 0 1-2.6-.97l-1.67.96a1 1 0 0 1-1.37-.37l-1-1.73a1 1 0 0 1 .24-1.28l1.52-1.2a8.7 8.7 0 0 1-.47-1.79H2.5a1 1 0 0 1-1-.84L1.17 12a1 1 0 0 1 1-1.16h1.92c.1-.62.26-1.22.47-1.79L3.96 7.85a1 1 0 0 1-.24-1.28l1-1.73a1 1 0 0 1 1.37-.37l1.67.96c.8-.42 1.68-.73 2.6-.97l.36-1.9zM12 14a3 3 0 1 0 6 0 3 3 0 0 0-6 0z"/>
+          </g>
         </svg>
       </li>
 
-      <!-- LWC (mono) -->
-      <li class="svgicon mono" title="LWC" aria-label="LWC">
+      <!-- LWC (badge-like) -->
+      <li class="svgicon" title="LWC" aria-label="LWC">
         <svg viewBox="0 0 64 64" aria-hidden="true">
-          <rect x="14" y="32" width="20" height="12" rx="2"/>
-          <rect x="30" y="20" width="20" height="12" rx="2"/>
-          <path d="M22 34l4-1-2 3h3l-6 6 2-4h-3z"/>
-          <path d="M38 22l4-1-2 3h3l-6 6 2-4h-3z"/>
+          <circle cx="32" cy="32" r="28" fill="#2B77D2" stroke="#000" stroke-width="4"/>
+          <g stroke="#000" stroke-opacity=".22" stroke-width="1">
+            <g><line x1="12" y1="16" x2="52" y2="16"/><line x1="12" y1="22" x2="52" y2="22"/><line x1="12" y1="28" x2="52" y2="28"/><line x1="12" y1="34" x2="52" y2="34"/><line x1="12" y1="40" x2="52" y2="40"/><line x1="12" y1="46" x2="52" y2="46"/></g>
+            <g><line x1="16" y1="12" x2="16" y2="52"/><line x1="22" y1="12" x2="22" y2="52"/><line x1="28" y1="12" x2="28" y2="52"/><line x1="34" y1="12" x2="34" y2="52"/><line x1="40" y1="12" x2="40" y2="52"/><line x1="46" y1="12" x2="46" y2="52"/></g>
+          </g>
+          <g transform="translate(19,34)">
+            <rect x="0" y="4" width="22" height="12" rx="2" fill="#F3C21A"/>
+            <path d="M22 4l8-4v12l-8 4z" fill="#1F4C99"/>
+            <path d="M0 4l8-4h22l-8 4z" fill="#2F65C7"/>
+            <path d="M9 6l5-1-2 3h3l-6 6 2-4h-3z" fill="#fff"/>
+          </g>
+          <g transform="translate(29,18)">
+            <rect x="0" y="4" width="22" height="12" rx="2" fill="#2F65C7"/>
+            <path d="M22 4l8-4v12l-8 4z" fill="#1F4C99"/>
+            <path d="M0 4l8-4h22l-8 4z" fill="#5B97FF"/>
+            <path d="M9 6l5-1-2 3h3l-6 6 2-4h-3z" fill="#fff"/>
+          </g>
         </svg>
       </li>
 
-      <!-- AWS (mono) -->
-      <li class="svgicon mono" title="AWS" aria-label="AWS">
-        <svg viewBox="0 0 64 64" aria-hidden="true">
-          <path d="M14 46c10 8 26 8 36 0" stroke-linecap="round"/>
-          <rect x="14" y="16" width="8" height="18" rx="1"/>
-          <rect x="28" y="16" width="8" height="18" rx="1"/>
-          <rect x="42" y="16" width="8" height="18" rx="1"/>
+      <!-- AWS -->
+      <li class="svgicon" title="AWS" aria-label="AWS">
+        <svg viewBox="0 0 256 256" aria-hidden="true">
+          <path d="M60 194c41 29 95 29 136 0" fill="none" stroke="currentColor" stroke-width="16" stroke-linecap="round"/>
+          <path d="M75 78h30v78H75zM119 78h30v78h-30z" fill="currentColor"/>
+          <path d="M171 78h30v78h-30z" fill="currentColor" opacity=".65"/>
         </svg>
       </li>
 
+      <!-- Postman -->
       <li title="Postman"><i class="devicon-postman-plain"></i></li>
+
       <li title="Git"><i class="devicon-git-plain"></i></li>
       <li title="GitHub"><i class="devicon-github-original"></i></li>
       <li title="Linux"><i class="devicon-linux-plain"></i></li>
@@ -127,7 +145,9 @@
           </div>
         </div>
         <a class="thumb" href="https://github.com/Fxlipemac/carobjectdetectionmodelyolo_backup" target="_blank" rel="noopener">
-          <img src="/img/carobjectdetection.jpg" onerror="this.onerror=null; this.src='carobjectdetection.jpg';" alt="Frames do dataset com detecções do YOLOv11" loading="lazy" width="160" height="100">
+          <img src="/img/carobjectdetection.jpg"
+               onerror="this.onerror=null; this.src='carobjectdetection.jpg';"
+               alt="Frames do dataset com detecções do YOLOv11" loading="lazy" width="160" height="100">
         </a>
       </li>
 
@@ -142,7 +162,9 @@
           </div>
         </div>
         <a class="thumb" href="https://app.rocketseat.com.br/certificates/7561b9e4-d17f-4dcd-9fa9-4a807d4469e1" target="_blank" rel="noopener">
-          <img src="/img/php_certificado.png" onerror="this.onerror=null; this.src='php_certificado.png';" alt="Certificado Laravel + MySQL (Rocketseat)" loading="lazy" width="160" height="100">
+          <img src="/img/php_certificado.png"
+               onerror="this.onerror=null; this.src='php_certificado.png';"
+               alt="Certificado Laravel + MySQL (Rocketseat)" loading="lazy" width="160" height="100">
         </a>
       </li>
 
@@ -157,7 +179,9 @@
           </div>
         </div>
         <a class="thumb" href="https://app.rocketseat.com.br/certificates/f8bafeca-2312-4324-b896-a7cdd1facce5" target="_blank" rel="noopener">
-          <img src="/img/python_certificado.png" onerror="this.onerror=null; this.src='python_certificado.png';" alt="Certificado Python com Flask (Rocketseat)" loading="lazy" width="160" height="100">
+          <img src="/img/python_certificado.png"
+               onerror="this.onerror=null; this.src='python_certificado.png';"
+               alt="Certificado Python com Flask (Rocketseat)" loading="lazy" width="160" height="100">
         </a>
       </li>
 
@@ -172,109 +196,109 @@
           </div>
         </div>
         <a class="thumb" href="https://app.rocketseat.com.br/certificates/89669057-ef79-46eb-9825-4da6dc7ebe84" target="_blank" rel="noopener">
-          <img src="/img/java_certificado.png" onerror="this.onerror=null; this.src='java_certificado.png';" alt="Certificado Java Serverless (Rocketseat)" loading="lazy" width="160" height="100">
+          <img src="/img/java_certificado.png"
+               onerror="this.onerror=null; this.src='java_certificado.png';"
+               alt="Certificado Java Serverless (Rocketseat)" loading="lazy" width="160" height="100">
         </a>
       </li>
     </ul>
   </section>
 
-  <!-- COMPETÊNCIAS — NOVO ACCORDION -->
+  <!-- COMPETÊNCIAS — NOVO ACORDEÃO -->
   <section class="wrap section">
     <h2>Competências</h2>
 
-    <!-- data-single="true" para abrir apenas uma por vez -->
-    <div class="acc acc--grid" id="accSoft" data-single="true">
-
-      <div class="acc-item">
-        <button class="acc-btn" type="button" aria-expanded="false">
-          <span>Empatia</span><svg width="12" height="12" viewBox="0 0 12 12" class="acc-chev"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/></svg>
-        </button>
-        <div class="acc-panel">
-          <ul class="pills"><li>Comunicação</li><li>Colaboração orientada</li><li>Reconhecimento do outro</li></ul>
+    <div class="acc-grid" id="accGrid">
+      <!-- Empatia (aberta por padrão) -->
+      <div class="acc-item open">
+        <button class="acc-btn" type="button" aria-expanded="true">Empatia</button>
+        <div class="acc-body" role="region" aria-label="Empatia">
+          <div class="pills">
+            <span>Comunicação</span><span>Colaboração orientada</span><span>Reconhecimento do outro</span>
+          </div>
         </div>
       </div>
 
       <div class="acc-item">
-        <button class="acc-btn" type="button" aria-expanded="false">
-          <span>Autogestão</span><svg width="12" height="12" viewBox="0 0 12 12" class="acc-chev"><path d="M2 4l4 4 4-4"/></svg>
-        </button>
-        <div class="acc-panel">
-          <ul class="pills"><li>Regulação emocional</li><li>Prontidão & senso de urgência</li><li>Inteligência sensitiva</li></ul>
+        <button class="acc-btn" type="button" aria-expanded="false">Autogestão</button>
+        <div class="acc-body" role="region" aria-label="Autogestão">
+          <div class="pills">
+            <span>Regulação emocional</span><span>Prontidão & senso de urgência</span><span>Inteligência sensitiva</span>
+          </div>
         </div>
       </div>
 
       <div class="acc-item">
-        <button class="acc-btn" type="button" aria-expanded="false">
-          <span>Criatividade</span><svg width="12" height="12" viewBox="0 0 12 12" class="acc-chev"><path d="M2 4l4 4 4-4"/></svg>
-        </button>
-        <div class="acc-panel">
-          <ul class="pills"><li>Análise & inovação</li><li>Iniciativa & proatividade</li><li>Autonomia</li></ul>
+        <button class="acc-btn" type="button" aria-expanded="false">Criatividade</button>
+        <div class="acc-body" role="region" aria-label="Criatividade">
+          <div class="pills">
+            <span>Análise & inovação</span><span>Iniciativa & proatividade</span><span>Autonomia</span>
+          </div>
         </div>
       </div>
 
       <div class="acc-item">
-        <button class="acc-btn" type="button" aria-expanded="false">
-          <span>Produtividade</span><svg width="12" height="12" viewBox="0 0 12 12" class="acc-chev"><path d="M2 4l4 4 4-4"/></svg>
-        </button>
-        <div class="acc-panel">
-          <ul class="pills"><li>Planejamento & organização</li><li>Gestão do tempo</li><li>Adaptabilidade</li><li>Autocontrole & performance</li></ul>
+        <button class="acc-btn" type="button" aria-expanded="false">Produtividade</button>
+        <div class="acc-body" role="region" aria-label="Produtividade">
+          <div class="pills">
+            <span>Planejamento & organização</span><span>Gestão do tempo</span><span>Autocontrole & performance</span><span>Adaptabilidade</span>
+          </div>
         </div>
       </div>
 
       <div class="acc-item">
-        <button class="acc-btn" type="button" aria-expanded="false">
-          <span>Resolução de Problemas</span><svg width="12" height="12" viewBox="0 0 12 12" class="acc-chev"><path d="M2 4l4 4 4-4"/></svg>
-        </button>
-        <div class="acc-panel">
-          <ul class="pills"><li>Tomada de decisão</li><li>Problemas complexos</li><li>Mediação de conflitos</li></ul>
+        <button class="acc-btn" type="button" aria-expanded="false">Resolução de Problemas</button>
+        <div class="acc-body" role="region" aria-label="Resolução de Problemas">
+          <div class="pills">
+            <span>Tomada de decisão</span><span>Problemas complexos</span><span>Mediação de conflitos</span>
+          </div>
         </div>
       </div>
 
       <div class="acc-item">
-        <button class="acc-btn" type="button" aria-expanded="false">
-          <span>Inteligência Emocional</span><svg width="12" height="12" viewBox="0 0 12 12" class="acc-chev"><path d="M2 4l4 4 4-4"/></svg>
-        </button>
-        <div class="acc-panel">
-          <ul class="pills"><li>Disciplina focada</li><li>Aprendizado via feedback</li><li>Gestão de recursos pessoais</li></ul>
+        <button class="acc-btn" type="button" aria-expanded="false">Inteligência Emocional</button>
+        <div class="acc-body" role="region" aria-label="Inteligência Emocional">
+          <div class="pills">
+            <span>Disciplina focada</span><span>Aprendizado via feedback</span><span>Gestão de recursos pessoais</span>
+          </div>
         </div>
       </div>
 
       <div class="acc-item">
-        <button class="acc-btn" type="button" aria-expanded="false">
-          <span>Pensamento Crítico</span><svg width="12" height="12" viewBox="0 0 12 12" class="acc-chev"><path d="M2 4l4 4 4-4"/></svg>
-        </button>
-        <div class="acc-panel">
-          <ul class="pills"><li>Análise sistêmica</li><li>Raciocínio lógico</li><li>Resolução de problemas</li></ul>
+        <button class="acc-btn" type="button" aria-expanded="false">Pensamento Crítico</button>
+        <div class="acc-body" role="region" aria-label="Pensamento Crítico">
+          <div class="pills">
+            <span>Análise sistêmica</span><span>Raciocínio lógico</span><span>Resolução de problemas</span>
+          </div>
         </div>
       </div>
 
       <div class="acc-item">
-        <button class="acc-btn" type="button" aria-expanded="false">
-          <span>Persuasão & Negociação</span><svg width="12" height="12" viewBox="0 0 12 12" class="acc-chev"><path d="M2 4l4 4 4-4"/></svg>
-        </button>
-        <div class="acc-panel">
-          <ul class="pills"><li>Comunicação assertiva</li><li>Influência & persuasão</li><li>Competência intercultural</li></ul>
+        <button class="acc-btn" type="button" aria-expanded="false">Persuasão & Negociação</button>
+        <div class="acc-body" role="region" aria-label="Persuasão e Negociação">
+          <div class="pills">
+            <span>Comunicação assertiva</span><span>Influência & persuasão</span><span>Competência intercultural</span>
+          </div>
         </div>
       </div>
 
       <div class="acc-item">
-        <button class="acc-btn" type="button" aria-expanded="false">
-          <span>Relacionamento Interpessoal</span><svg width="12" height="12" viewBox="0 0 12 12" class="acc-chev"><path d="M2 4l4 4 4-4"/></svg>
-        </button>
-        <div class="acc-panel">
-          <ul class="pills"><li>Relacionamento & adaptabilidade</li><li>Flexibilidade</li><li>Aprendizado ativo</li></ul>
+        <button class="acc-btn" type="button" aria-expanded="false">Relacionamento Interpessoal</button>
+        <div class="acc-body" role="region" aria-label="Relacionamento Interpessoal">
+          <div class="pills">
+            <span>Relacionamento & adaptabilidade</span><span>Flexibilidade</span><span>Aprendizado ativo</span>
+          </div>
         </div>
       </div>
 
       <div class="acc-item">
-        <button class="acc-btn" type="button" aria-expanded="false">
-          <span>Autoconhecimento</span><svg width="12" height="12" viewBox="0 0 12 12" class="acc-chev"><path d="M2 4l4 4 4-4"/></svg>
-        </button>
-        <div class="acc-panel">
-          <ul class="pills"><li>Identificação de potencial</li><li>Resiliência</li><li>Motivação</li><li>Coragem</li></ul>
+        <button class="acc-btn" type="button" aria-expanded="false">Autoconhecimento</button>
+        <div class="acc-body" role="region" aria-label="Autoconhecimento">
+          <div class="pills">
+            <span>Identificação de potencial</span><span>Resiliência</span><span>Motivação</span><span>Coragem</span>
+          </div>
         </div>
       </div>
-
     </div>
   </section>
 
@@ -286,13 +310,18 @@
         <div class="edu-ico" aria-hidden="true">
           <svg viewBox="0 0 64 64"><path d="M4 24l28-12 28 12-28 12z" fill="currentColor"/><path d="M12 30v10c0 4 10 8 20 8s20-4 20-8V30" fill="none" stroke="currentColor" stroke-width="3"/></svg>
         </div>
-        <div class="edu-body"><strong>Ensino Médio Completo</strong></div>
+        <div class="edu-body">
+          <strong>Ensino Médio Completo</strong>
+        </div>
       </li>
+
       <li class="edu-item">
         <div class="edu-ico" aria-hidden="true">
           <svg viewBox="0 0 64 64"><path d="M4 26l28-12 28 12-28 12z" fill="currentColor"/><path d="M12 34v14h40V34" fill="none" stroke="currentColor" stroke-width="3"/></svg>
         </div>
-        <div class="edu-body"><strong>Engenharia de Software (Bacharelado)</strong> — Estácio de Sá · <span class="muted">2025 – 2029</span></div>
+        <div class="edu-body">
+          <strong>Engenharia de Software (Bacharelado)</strong> — Estácio de Sá · <span class="muted">2025 – 2029</span>
+        </div>
       </li>
     </ul>
   </section>
@@ -315,21 +344,19 @@
   <script>
     document.getElementById('y').textContent = new Date().getFullYear();
 
-    // Accordion robusto (sem <details>)
-    const acc = document.getElementById('accSoft');
-    const single = acc.dataset.single === 'true';
-    acc.querySelectorAll('.acc-btn').forEach(btn => {
+    // Acordeão novo — apenas 1 aberto
+    const items = [...document.querySelectorAll('.acc-item')];
+    items.forEach((item) => {
+      const btn = item.querySelector('.acc-btn');
       btn.addEventListener('click', () => {
-        const item = btn.closest('.acc-item');
-        const open = item.classList.toggle('open');
-        btn.setAttribute('aria-expanded', open);
-        if (single) {
-          acc.querySelectorAll('.acc-item').forEach(i => {
-            if (i !== item) {
-              i.classList.remove('open');
-              i.querySelector('.acc-btn').setAttribute('aria-expanded', 'false');
-            }
-          });
+        const isOpen = item.classList.contains('open');
+        items.forEach(i => {
+          i.classList.remove('open');
+          i.querySelector('.acc-btn').setAttribute('aria-expanded','false');
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          btn.setAttribute('aria-expanded','true');
         }
       });
     });
