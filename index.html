@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Luiz Felipe Maciel Mendonça — Portfolio</title>
 
-  <link rel="stylesheet" href="/style.css?v=17" />
+  <link rel="stylesheet" href="/style.css?v=18" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -20,7 +20,7 @@
       <p class="tag">Aspiring Salesforce Developer · Software Engineering Student</p>
       <p class="bio">
         PHP/Laravel, Python, APEX, SOQL e MySQL.
-        <strong>Trailhead Explorer 5.475 pts</strong> · <strong>11 badges</strong>.
+        <strong>Trailhea Explorer</strong> · <strong>11 emblemas</strong>.
       </p>
 
       <div class="links">
@@ -76,7 +76,7 @@
     </ul>
   </section>
 
-  <!-- PROJETOS (usando as imagens que você subiu na raiz) -->
+  <!-- PROJETOS (thumbs locais; tentam /img e caem para raiz se necessário) -->
   <section class="wrap section" id="projects">
     <h2>Projetos</h2>
     <ul class="plist">
@@ -91,7 +91,9 @@
           </div>
         </div>
         <a class="thumb" href="https://github.com/Fxlipemac/carobjectdetectionmodelyolo_backup" target="_blank" rel="noopener">
-          <img src="carobjectdetection.jpg" alt="Frames do dataset com detecções do YOLOv11" loading="lazy" width="160" height="100">
+          <img src="/img/carobjectdetection.jpg"
+               onerror="this.onerror=null; this.src='carobjectdetection.jpg';"
+               alt="Frames do dataset com detecções do YOLOv11" loading="lazy" width="160" height="100">
         </a>
       </li>
 
@@ -106,7 +108,9 @@
           </div>
         </div>
         <a class="thumb" href="https://app.rocketseat.com.br/certificates/7561b9e4-d17f-4dcd-9fa9-4a807d4469e1" target="_blank" rel="noopener">
-          <img src="php_certificado.png" alt="Certificado Laravel + MySQL (Rocketseat)" loading="lazy" width="160" height="100">
+          <img src="/img/php_certificado.png"
+               onerror="this.onerror=null; this.src='php_certificado.png';"
+               alt="Certificado Laravel + MySQL (Rocketseat)" loading="lazy" width="160" height="100">
         </a>
       </li>
 
@@ -121,7 +125,9 @@
           </div>
         </div>
         <a class="thumb" href="https://app.rocketseat.com.br/certificates/f8bafeca-2312-4324-b896-a7cdd1facce5" target="_blank" rel="noopener">
-          <img src="python_certificado.png" alt="Certificado Python com Flask (Rocketseat)" loading="lazy" width="160" height="100">
+          <img src="/img/python_certificado.png"
+               onerror="this.onerror=null; this.src='python_certificado.png';"
+               alt="Certificado Python com Flask (Rocketseat)" loading="lazy" width="160" height="100">
         </a>
       </li>
 
@@ -136,7 +142,9 @@
           </div>
         </div>
         <a class="thumb" href="https://app.rocketseat.com.br/certificates/89669057-ef79-46eb-9825-4da6dc7ebe84" target="_blank" rel="noopener">
-          <img src="java_certificado.png" alt="Certificado Java Serverless (Rocketseat)" loading="lazy" width="160" height="100">
+          <img src="/img/java_certificado.png"
+               onerror="this.onerror=null; this.src='java_certificado.png';"
+               alt="Certificado Java Serverless (Rocketseat)" loading="lazy" width="160" height="100">
         </a>
       </li>
     </ul>
@@ -224,13 +232,23 @@
   </footer>
 
   <script>
+    // ano
     document.getElementById('y').textContent = new Date().getFullYear();
 
-    // mantém apenas 1 competência aberta por vez
-    const items = document.querySelectorAll('.soft-item');
-    items.forEach(d => {
-      d.addEventListener('toggle', () => {
-        if (d.open) items.forEach(o => { if (o !== d) o.open = false; });
+    // Accordion: apenas 1 aberto
+    const items = [...document.querySelectorAll('.soft-item')];
+    const summaries = document.querySelectorAll('.soft-item > summary');
+
+    summaries.forEach(s => {
+      s.addEventListener('click', e => {
+        e.preventDefault(); // impedimos o toggle nativo
+        const d = s.parentElement;
+        const willOpen = !d.hasAttribute('open');
+
+        // fecha todos
+        items.forEach(o => o.removeAttribute('open'));
+        // se o clicado iria abrir, abre agora
+        if (willOpen) d.setAttribute('open', '');
       });
     });
   </script>
