@@ -5,230 +5,132 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Luiz Felipe Maciel Mendonça — Portfolio</title>
 
-  <!-- CSS principal -->
-  <link rel="stylesheet" href="/style.css?v=6" />
-
-  <!-- Fonte -->
+  <link rel="stylesheet" href="/style.css?v=8" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
   <link rel="icon" href="data:;base64,iVBORw0KGgo=">
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav class="nav">
-    <div class="container nav-inner">
-      <a class="brand" href="#home">Luiz Felipe</a>
-      <ul class="nav-links">
-        <li><a href="#home">Início</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#soft">Competências</a></li>
-        <li><a href="#projects">Projetos</a></li>
-        <li><a href="#contact">Contato</a></li>
+  <!-- HERO minimalista -->
+  <header class="wrap hero">
+    <div class="head">
+      <h1>Luiz Felipe <span>Maciel Mendonça</span></h1>
+      <p class="tag">Salesforce Dev Júnior · Back-end/Cloud em formação</p>
+      <p class="bio">
+        Estudante de Engenharia de Software (Estácio). Experiência com PHP/Laravel, MySQL, Python e Java (AWS serverless).
+        No Trailhead: <strong>5.475 pts</strong> · <strong>11 emblemas</strong>.
+      </p>
+
+      <div class="links">
+        <a class="pill primary" href="https://www.linkedin.com/in/felipemaciel" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="pill" href="https://github.com/fxlipemac" target="_blank" rel="noopener">GitHub</a>
+        <a class="pill ghost" href="mailto:felipemaciel1501@hotmail.com">E-mail</a>
+      </div>
+
+      <ul class="factline">
+        <li>IaaS • PaaS • SaaS</li>
+        <li>AWS (Lambda, S3, API Gateway)</li>
+        <li>Apex / LWC (básico)</li>
       </ul>
     </div>
-  </nav>
 
-  <!-- HERO -->
-  <header id="home" class="hero">
-    <div class="container hero-grid">
-
-      <!-- social rail -->
-      <aside class="social-rail" aria-label="redes">
-        <a class="icon" href="https://www.linkedin.com/in/felipemaciel" target="_blank" rel="noopener" aria-label="LinkedIn">
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8.5h4V23h-4V8.5zM8.5 8.5h3.8v2h.05c.53-1 1.82-2.05 3.75-2.05 4.01 0 4.75 2.64 4.75 6.08V23h-4v-5.6c0-1.33-.02-3.05-1.86-3.05-1.86 0-2.15 1.45-2.15 2.95V23h-4V8.5z"/></svg>
-        </a>
-        <a class="icon" href="https://github.com/fxlipemac" target="_blank" rel="noopener" aria-label="GitHub">
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.1.82-.26.82-.58v-2.2c-3.34.73-4.04-1.42-4.04-1.42-.54-1.38-1.33-1.75-1.33-1.75-1.09-.75.08-.73.08-.73 1.2.08 1.83 1.24 1.83 1.24 1.07 1.83 2.8 1.3 3.49.99.11-.78.42-1.3.76-1.6-2.67-.3-5.48-1.34-5.48-5.96 0-1.32.47-2.39 1.24-3.23-.12-.3-.54-1.5.12-3.12 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.62.24 2.82.12 3.12.77.84 1.23 1.9 1.23 3.23 0 4.63-2.82 5.66-5.5 5.96.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.83.57A12 12 0 0 0 12 .5z"/></svg>
-        </a>
-        <a class="icon" href="mailto:felipemaciel1501@hotmail.com" aria-label="E-mail">
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M2 4h20a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm0 3v.4l10 6.25L22 7.4V7H2zm20 10V9.3l-9.4 5.87a2 2 0 0 1-2.2 0L1.999 9.3V17h20z"/></svg>
-        </a>
-      </aside>
-
-      <div class="hero-copy">
-        <p class="eyebrow">Olá, eu sou</p>
-        <h1>Luiz <span>Felipe</span> Maciel Mendonça</h1>
-        <p class="tagline">Salesforce Developer Júnior • Back-end / Cloud em formação</p>
-        <p class="blurb">
-          Estudante de Engenharia de Software (Estácio). Experiência com PHP/Laravel, MySQL, Python e Java (AWS serverless).
-          No Trailhead: <strong>5.475 pts</strong> e <strong>11 emblemas</strong>.
-        </p>
-        <div class="cta">
-          <a class="btn primary" href="https://www.linkedin.com/in/felipemaciel" target="_blank" rel="noopener">Conectar no LinkedIn</a>
-          <a class="btn ghost" href="#projects">Ver projetos</a>
-        </div>
-        <div class="quick-facts">
-          <span>IaaS • PaaS • SaaS</span>
-          <span>AWS (Lambda, S3, API Gateway)</span>
-          <span>Apex/LWC básico</span>
-        </div>
-      </div>
-
-      <div class="hero-visual">
-        <div class="photo">
-          <img src="https://github.com/fxlipemac.png?size=512" alt="Foto de perfil de Luiz Felipe" width="360" height="360" loading="eager" decoding="async">
-        </div>
-      </div>
+    <!-- foto circular com anel/gradiente azul -->
+    <div class="portrait">
+      <div class="ring" aria-hidden="true"></div>
+      <img src="https://github.com/fxlipemac.png?size=640" alt="Foto de perfil de Luiz Felipe" width="280" height="280" loading="eager" decoding="async">
     </div>
-
-    <a href="#projects" class="scroll-hint" aria-label="role para ver mais">Scroll down</a>
   </header>
 
-  <!-- SKILLS -->
-  <section id="skills" class="container section">
+  <!-- SKILLS enxutas -->
+  <section class="wrap section">
     <h2>Skills</h2>
     <ul class="chips">
       <li>Python</li><li>Java</li><li>PHP</li><li>Laravel</li>
-      <li>MySQL</li><li>SOQL</li><li>Apex/LWC</li>
+      <li>MySQL</li><li>SOQL</li><li>Apex / LWC</li>
       <li>AWS</li><li>Flask</li><li>Git/GitHub</li>
     </ul>
   </section>
 
-  <!-- SOCIOEMOCIONAIS -->
-  <section id="soft" class="container section">
-    <h2>Competências Socioemocionais</h2>
-
-    <div class="soft-grid">
-      <article class="soft-card">
-        <h3>Empatia</h3>
-        <div class="pills">
-          <span class="pill">Comunicação</span>
-          <span class="pill">Colaboração orientada</span>
-          <span class="pill">Reconhecimento do outro</span>
-        </div>
-      </article>
-
-      <article class="soft-card">
-        <h3>Autogestão</h3>
-        <div class="pills">
-          <span class="pill">Regulação emocional</span>
-          <span class="pill">Prontidão & senso de urgência</span>
-          <span class="pill">Inteligência sensitiva</span>
-          <span class="pill">Construção da autogestão</span>
-        </div>
-      </article>
-
-      <article class="soft-card">
-        <h3>Criatividade</h3>
-        <div class="pills">
-          <span class="pill">Análise & inovação</span>
-          <span class="pill">Iniciativa & proatividade</span>
-          <span class="pill">Autonomia & relacionamento</span>
-        </div>
-      </article>
-
-      <article class="soft-card">
-        <h3>Produtividade</h3>
-        <div class="pills">
-          <span class="pill">Planejamento & organização</span>
-          <span class="pill">Gestão do tempo</span>
-          <span class="pill">Adaptabilidade</span>
-          <span class="pill">Autocontrole & performance</span>
-        </div>
-      </article>
-
-      <article class="soft-card">
-        <h3>Resolução de Problemas</h3>
-        <div class="pills">
-          <span class="pill">Tomada de decisão efetiva</span>
-          <span class="pill">Problemas complexos</span>
-          <span class="pill">Mediação & gestão de conflitos</span>
-        </div>
-      </article>
-
-      <article class="soft-card">
-        <h3>Inteligência Emocional</h3>
-        <div class="pills">
-          <span class="pill">Disciplina focada</span>
-          <span class="pill">Aprendizado via feedback</span>
-          <span class="pill">Administração de recursos pessoais</span>
-        </div>
-      </article>
-
-      <article class="soft-card">
-        <h3>Pensamento Crítico</h3>
-        <div class="pills">
-          <span class="pill">Análise sistêmica</span>
-          <span class="pill">Raciocínio lógico</span>
-          <span class="pill">Resolução de problemas</span>
-        </div>
-      </article>
-
-      <article class="soft-card">
-        <h3>Persuasão & Negociação</h3>
-        <div class="pills">
-          <span class="pill">Comunicação assertiva</span>
-          <span class="pill">Influência & persuasão</span>
-          <span class="pill">Competência intercultural</span>
-        </div>
-      </article>
-
-      <article class="soft-card">
-        <h3>Relacionamento Interpessoal</h3>
-        <div class="pills">
-          <span class="pill">Relacionamento & adaptabilidade</span>
-          <span class="pill">Flexibilidade</span>
-          <span class="pill">Aprendizado ativo</span>
-        </div>
-      </article>
-
-      <article class="soft-card">
-        <h3>Autoconhecimento</h3>
-        <div class="pills">
-          <span class="pill">Identificação de potencial</span>
-          <span class="pill">Resiliência</span>
-          <span class="pill">Motivação</span>
-          <span class="pill">Coragem</span>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <!-- PROJETOS -->
-  <section id="projects" class="container section">
+  <!-- PROJETOS como lista simples -->
+  <section class="wrap section" id="projects">
     <h2>Projetos</h2>
-    <div class="cards">
-      <article class="card">
+    <ul class="plist">
+      <li>
         <h3>YOLOv11 — Detecção de Veículos</h3>
-        <p>Detecção apenas de veículos em frames de vídeo, métricas e relatório de confiança.</p>
-        <div class="tags"><span>Python</span><span>YOLOv11</span><span>ML</span></div>
-        <div class="card-actions">
-          <a class="btn small" href="#" aria-disabled="true">Repositório</a>
-        </div>
-      </article>
-
-      <article class="card">
+        <p>Detecção exclusiva de veículos em frames de vídeo, métricas e relatório de confiança. <span class="stack">Python · YOLOv11 · ML</span></p>
+        <div class="row"><a class="mini" href="#" aria-disabled="true">repositório</a></div>
+      </li>
+      <li>
         <h3>CRUD — Laravel + MySQL</h3>
-        <p>Autenticação, filtros e relacionamentos. Migrações e seeders.</p>
-        <div class="tags"><span>PHP</span><span>Laravel</span><span>MySQL</span></div>
-        <div class="card-actions">
-          <a class="btn small" href="#" aria-disabled="true">Repositório</a>
-        </div>
-      </article>
-
-      <article class="card">
+        <p>Autenticação, filtros e relacionamentos. Migrações e seeders para dados de exemplo. <span class="stack">PHP · Laravel · MySQL</span></p>
+        <div class="row"><a class="mini" href="#" aria-disabled="true">repositório</a></div>
+      </li>
+      <li>
         <h3>Java Serverless — URL Shortener</h3>
-        <p>AWS Lambda + API Gateway + S3. JSON (Jackson) e Maven.</p>
-        <div class="tags"><span>Java</span><span>AWS</span><span>Serverless</span></div>
-        <div class="card-actions">
-          <a class="btn small" href="#" aria-disabled="true">Repositório</a>
-        </div>
-      </article>
-    </div>
+        <p>AWS Lambda + API Gateway + S3. Serialização JSON (Jackson) e build com Maven. <span class="stack">Java · AWS · Serverless</span></p>
+        <div class="row"><a class="mini" href="#" aria-disabled="true">repositório</a></div>
+      </li>
+    </ul>
   </section>
 
-  <!-- CONTATO -->
-  <footer id="contact" class="site-footer">
-    <div class="container footer-inner">
-      <p>Disponível para estágio/trainee remoto.</p>
-      <div class="cta">
-        <a class="btn primary" href="https://www.linkedin.com/in/felipemaciel" target="_blank" rel="noopener">Falar no LinkedIn</a>
-        <a class="btn" href="mailto:felipemaciel1501@hotmail.com">E-mail</a>
+  <!-- Competências socioemocionais com TOGGLE -->
+  <section class="wrap section">
+    <h2>Competências</h2>
+
+    <details class="soft">
+      <summary>
+        Competências socioemocionais — <span>clique para expandir</span>
+      </summary>
+
+      <div class="soft-grid">
+        <div class="soft-card">
+          <h4>Empatia</h4>
+          <div class="pills"><span>Comunicação</span><span>Colaboração orientada</span><span>Reconhecimento do outro</span></div>
+        </div>
+        <div class="soft-card">
+          <h4>Autogestão</h4>
+          <div class="pills"><span>Regulação emocional</span><span>Prontidão & senso de urgência</span><span>Inteligência sensitiva</span></div>
+        </div>
+        <div class="soft-card">
+          <h4>Criatividade</h4>
+          <div class="pills"><span>Análise & inovação</span><span>Iniciativa & proatividade</span><span>Autonomia</span></div>
+        </div>
+        <div class="soft-card">
+          <h4>Produtividade</h4>
+          <div class="pills"><span>Planejamento & organização</span><span>Gestão do tempo</span><span>Adaptabilidade</span></div>
+        </div>
+        <div class="soft-card">
+          <h4>Resolução de Problemas</h4>
+          <div class="pills"><span>Tomada de decisão</span><span>Problemas complexos</span><span>Mediação de conflitos</span></div>
+        </div>
+        <div class="soft-card">
+          <h4>Inteligência Emocional</h4>
+          <div class="pills"><span>Disciplina focada</span><span>Feedback</span><span>Gestão de recursos pessoais</span></div>
+        </div>
+        <div class="soft-card">
+          <h4>Pensamento Crítico</h4>
+          <div class="pills"><span>Análise sistêmica</span><span>Raciocínio lógico</span><span>Resolução de problemas</span></div>
+        </div>
+        <div class="soft-card">
+          <h4>Persuasão & Negociação</h4>
+          <div class="pills"><span>Comunicação assertiva</span><span>Influência & persuasão</span><span>Competência intercultural</span></div>
+        </div>
+        <div class="soft-card">
+          <h4>Relacionamento Interpessoal</h4>
+          <div class="pills"><span>Relacionamento & adaptabilidade</span><span>Flexibilidade</span><span>Aprendizado ativo</span></div>
+        </div>
+        <div class="soft-card">
+          <h4>Autoconhecimento</h4>
+          <div class="pills"><span>Identificação de potencial</span><span>Resiliência</span><span>Motivação</span><span>Coragem</span></div>
+        </div>
       </div>
-      <p class="copy">© <span id="y"></span> Luiz Felipe Maciel Mendonça</p>
-    </div>
+    </details>
+  </section>
+
+  <!-- rodapé minimal -->
+  <footer class="wrap foot">
+    <p>Disponível para estágio/trainee remoto. © <span id="y"></span> Luiz Felipe Maciel Mendonça</p>
   </footer>
 
   <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
