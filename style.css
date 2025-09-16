@@ -108,3 +108,17 @@ body{
 
 /* ===== Rodapé ===== */
 .foot{padding:28px 20px 40px;color:#5f6c80;text-align:center}
+
+/* Ícones nos botões e chips */
+.links .pill{
+  display:inline-flex; align-items:center; gap:8px;
+}
+.ico{ width:18px; height:18px; flex:0 0 18px; }
+
+.chips-icons li{
+  display:inline-flex; align-items:center; gap:8px;
+}
+.ico-sm{ width:16px; height:16px; flex:0 0 16px; }
+
+/* Deixa os ícones herdarem a cor do texto do componente */
+.ico, .ico-sm{ color:currentColor }
