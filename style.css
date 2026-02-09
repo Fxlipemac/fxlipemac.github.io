@@ -3,8 +3,8 @@
   --panel: #11141a;
   --muted: #9aa4b2;
   --text: #e6e9ef;
-  --brand: #3b82f6; /* Azul principal */
-  --brand-2: #22c55e; /* Verde */
+  --brand: #3b82f6;
+  --brand-2: #22c55e;
   --chip: #151a22;
   --card: #0f1319;
   --stroke: #222833;
@@ -291,19 +291,18 @@ h1, h2, h3 {
   border: 1px solid var(--stroke);
 }
 
-/* COMPETÊNCIAS (ACORDEÃO) */
+/* COMPETÊNCIAS (MASONRY/COLUMNS) */
 .acc-grid {
-  display: grid;
-  gap: 16px;
-  grid-template-columns: repeat(3, 1fr);
-  align-items: start; /* Impede que cards fechados estiquem */
+  display: block;
+  column-count: 3;
+  column-gap: 16px;
 }
 
 @media (max-width: 980px) {
-  .acc-grid { grid-template-columns: repeat(2, 1fr); }
+  .acc-grid { column-count: 2; }
 }
 @media (max-width: 640px) {
-  .acc-grid { grid-template-columns: 1fr; }
+  .acc-grid { column-count: 1; }
 }
 
 .acc-item {
@@ -312,6 +311,9 @@ h1, h2, h3 {
   border-radius: 14px;
   overflow: hidden;
   transition: border-color 0.2s;
+  break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+  margin-bottom: 16px;
 }
 
 .acc-item.open {
