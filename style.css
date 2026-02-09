@@ -41,6 +41,7 @@ h1,h2,h3{margin:0 0 10px 0}
 }
 .pill.primary{background:linear-gradient(180deg,var(--brand),#2563eb);border:none}
 .pill.ghost{background:transparent}
+.pill.trailhead{background:linear-gradient(180deg,#1e90ff,#0066cc);border:none;color:#fff}
 .pill .ico{width:18px;height:18px}
 
 .portrait{position:relative;width:260px;aspect-ratio:1/1}
