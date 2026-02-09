@@ -39,7 +39,7 @@ h1,h2,h3{margin:0 0 10px 0}
   padding:10px 14px;border-radius:999px;border:1px solid var(--stroke);
   color:var(--text);text-decoration:none;background:var(--panel);font-weight:600
 }
-.pill.primary{background:linear-gradient(180deg,var(--brand),#2563eb);border:none}
+.pill.primary{background:linear-gradient(180deg,rgb(10, 102, 194),rgb(8, 85, 163));border:none}
 .pill.ghost{background:transparent}
 .pill.trailhead{background:linear-gradient(180deg,rgb(13, 157, 218),rgb(7, 120, 170));border:none;color:#fff}
 .pill .ico{width:18px;height:18px}
@@ -71,6 +71,7 @@ h1,h2,h3{margin:0 0 10px 0}
 }
 .icon-grid i{font-size:28px;color:#d5dcea}
 .svgicon svg{width:28px;height:28px;color:#d5dcea}
+.imgicon img{width:28px;height:28px;object-fit:contain}
 
 /* PROJETOS */
 .plist{list-style:none;margin:0;padding:0;display:grid;gap:18px}
