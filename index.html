@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Luiz Felipe Maciel Mendonça — Portfolio</title>
 
-  <link rel="stylesheet" href="/style.css?v=28" />
+  <link rel="stylesheet" href="/style.css?v=29" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -13,7 +13,6 @@
 </head>
 <body>
 
-  <!-- HERO -->
   <header class="wrap hero">
     <div class="head">
       <h1>Luiz Felipe <span>Maciel Mendonça</span></h1>
@@ -24,7 +23,7 @@
       </p>
 
       <div class="links">
-        <a class="pill primary" href="www.linkedin.com/in/fxlipemac" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <a class="pill primary" href="https://www.linkedin.com/in/fxlipemac" target="_blank" rel="noopener" aria-label="LinkedIn">
           <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8.5h4V23h-4V8.5zM8.5 8.5h3.8v2h.05c.53-1 1.82-2.05 3.75-2.05 4.01 0 4.75 2.64 4.75 6.08V23h-4v-5.6c0-1.33-.02-3.05-1.86-3.05-1.86 0-2.15 1.45-2.15 2.95V23h-4V8.5z"/></svg>
           LinkedIn
         </a>
@@ -43,40 +42,18 @@
       </div>
     </div>
 
-    <!-- Avatar -->
     <div class="portrait">
       <div class="ring" aria-hidden="true"></div>
       <img src="https://github.com/fxlipemac.png?size=640" alt="Foto de perfil de Luiz Felipe" loading="eager" decoding="async">
     </div>
   </header>
 
-  <!-- SKILLS -->
   <section class="wrap section">
     <h2>Skills</h2>
     <ul class="icon-grid" aria-label="Stacks e ferramentas">
       <li class="iicon" title="Salesforce" aria-label="Salesforce">
         <i class="devicon-salesforce-plain colored"></i>
       </li>
-
-      <li class="iicon" title="Apex" aria-label="Apex">
-        <i class="devicon-apex-original colored"></i>
-      </li>
-
-      <!-- SOQL -->
-      <li class="imgicon" title="SOQL" aria-label="SOQL">
-        <img src="/SOQL.webp" alt="SOQL" loading="lazy" decoding="async">
-      </li>
-
-      <!-- LWC (badge-like) -->
-      <li class="imgicon" title="LWC" aria-label="LWC">
-        <img src="/LWC.webp" alt="LWC" loading="lazy" decoding="async">
-      </li>
-
-      <!-- Triggers (imagem) -->
-      <li class="imgicon" title="Triggers" aria-label="Triggers">
-        <img src="/apex-triggers.webp" alt="Apex Triggers" loading="lazy" decoding="async">
-      </li>
-
       <li class="iicon" title="Python" aria-label="Python">
         <i class="devicon-python-plain colored"></i>
       </li>
@@ -101,7 +78,6 @@
       <li class="iicon" title="MySQL" aria-label="MySQL">
         <i class="devicon-mysql-plain colored"></i>
       </li>
-
       <li class="iicon" title="Git" aria-label="Git">
         <i class="devicon-git-plain colored"></i>
       </li>
@@ -120,7 +96,6 @@
     </ul>
   </section>
 
-  <!-- FORMAÇÃO -->
   <section class="wrap section">
     <h2>Formação</h2>
     <ul class="edu">
@@ -129,13 +104,13 @@
           <svg viewBox="0 0 64 64"><path d="M4 26l28-12 28 12-28 12z" fill="currentColor"/><path d="M12 34v14h40V34" fill="none" stroke="currentColor" stroke-width="3"/></svg>
         </div>
         <div class="edu-body">
-          <strong>Bacharelado em Engenharia de Software</strong> — Universidade Estácio de Sá · <span class="muted">2025 – 2029</span>
+          <strong>Bacharelado em Engenharia de Software</strong><br>
+          <span style="color:#d5dcea;">Universidade Estácio de Sá</span> · <span class="muted">2025 – 2029</span>
         </div>
       </li>
     </ul>
   </section>
 
-  <!-- PROJETOS -->
   <section class="wrap section" id="projects">
     <h2>Projetos</h2>
     <ul class="plist">
@@ -174,7 +149,6 @@
     </ul>
   </section>
 
-  <!-- CERTIFICAÇÕES -->
   <section class="wrap section">
     <h2>Certificações</h2>
     <ul class="plist">
@@ -231,15 +205,16 @@
     </ul>
   </section>
 
-  <!-- COMPETÊNCIAS — NOVO ACORDEÃO -->
   <section class="wrap section">
     <h2>Competências</h2>
 
     <div class="acc-grid" id="accGrid">
-      <!-- Empatia (aberta por padrão) -->
       <div class="acc-item open">
-        <button class="acc-btn" type="button" aria-expanded="true">Empatia</button>
-        <div class="acc-body" role="region" aria-label="Empatia">
+        <button class="acc-head" type="button" aria-expanded="true">
+          Empatia
+          <div class="chev"></div>
+        </button>
+        <div class="acc-content" role="region" aria-label="Empatia">
           <div class="pills">
             <span>Comunicação</span><span>Colaboração orientada</span><span>Reconhecimento do outro</span>
           </div>
@@ -247,8 +222,11 @@
       </div>
 
       <div class="acc-item">
-        <button class="acc-btn" type="button" aria-expanded="false">Autogestão</button>
-        <div class="acc-body" role="region" aria-label="Autogestão">
+        <button class="acc-head" type="button" aria-expanded="false">
+          Autogestão
+          <div class="chev"></div>
+        </button>
+        <div class="acc-content" role="region" aria-label="Autogestão">
           <div class="pills">
             <span>Regulação emocional</span><span>Prontidão & senso de urgência</span><span>Inteligência sensitiva</span>
           </div>
@@ -256,8 +234,11 @@
       </div>
 
       <div class="acc-item">
-        <button class="acc-btn" type="button" aria-expanded="false">Criatividade</button>
-        <div class="acc-body" role="region" aria-label="Criatividade">
+        <button class="acc-head" type="button" aria-expanded="false">
+          Criatividade
+          <div class="chev"></div>
+        </button>
+        <div class="acc-content" role="region" aria-label="Criatividade">
           <div class="pills">
             <span>Análise & inovação</span><span>Iniciativa & proatividade</span><span>Autonomia</span>
           </div>
@@ -265,8 +246,11 @@
       </div>
 
       <div class="acc-item">
-        <button class="acc-btn" type="button" aria-expanded="false">Produtividade</button>
-        <div class="acc-body" role="region" aria-label="Produtividade">
+        <button class="acc-head" type="button" aria-expanded="false">
+          Produtividade
+          <div class="chev"></div>
+        </button>
+        <div class="acc-content" role="region" aria-label="Produtividade">
           <div class="pills">
             <span>Planejamento & organização</span><span>Gestão do tempo</span><span>Autocontrole & performance</span><span>Adaptabilidade</span>
           </div>
@@ -274,8 +258,11 @@
       </div>
 
       <div class="acc-item">
-        <button class="acc-btn" type="button" aria-expanded="false">Resolução de Problemas</button>
-        <div class="acc-body" role="region" aria-label="Resolução de Problemas">
+        <button class="acc-head" type="button" aria-expanded="false">
+          Resolução de Problemas
+          <div class="chev"></div>
+        </button>
+        <div class="acc-content" role="region" aria-label="Resolução de Problemas">
           <div class="pills">
             <span>Tomada de decisão</span><span>Problemas complexos</span><span>Mediação de conflitos</span>
           </div>
@@ -283,8 +270,11 @@
       </div>
 
       <div class="acc-item">
-        <button class="acc-btn" type="button" aria-expanded="false">Inteligência Emocional</button>
-        <div class="acc-body" role="region" aria-label="Inteligência Emocional">
+        <button class="acc-head" type="button" aria-expanded="false">
+          Inteligência Emocional
+          <div class="chev"></div>
+        </button>
+        <div class="acc-content" role="region" aria-label="Inteligência Emocional">
           <div class="pills">
             <span>Disciplina focada</span><span>Aprendizado via feedback</span><span>Gestão de recursos pessoais</span>
           </div>
@@ -292,8 +282,11 @@
       </div>
 
       <div class="acc-item">
-        <button class="acc-btn" type="button" aria-expanded="false">Pensamento Crítico</button>
-        <div class="acc-body" role="region" aria-label="Pensamento Crítico">
+        <button class="acc-head" type="button" aria-expanded="false">
+          Pensamento Crítico
+          <div class="chev"></div>
+        </button>
+        <div class="acc-content" role="region" aria-label="Pensamento Crítico">
           <div class="pills">
             <span>Análise sistêmica</span><span>Raciocínio lógico</span><span>Resolução de problemas</span>
           </div>
@@ -301,8 +294,11 @@
       </div>
 
       <div class="acc-item">
-        <button class="acc-btn" type="button" aria-expanded="false">Persuasão & Negociação</button>
-        <div class="acc-body" role="region" aria-label="Persuasão e Negociação">
+        <button class="acc-head" type="button" aria-expanded="false">
+          Persuasão & Negociação
+          <div class="chev"></div>
+        </button>
+        <div class="acc-content" role="region" aria-label="Persuasão e Negociação">
           <div class="pills">
             <span>Comunicação assertiva</span><span>Influência & persuasão</span><span>Competência intercultural</span>
           </div>
@@ -310,8 +306,11 @@
       </div>
 
       <div class="acc-item">
-        <button class="acc-btn" type="button" aria-expanded="false">Relacionamento Interpessoal</button>
-        <div class="acc-body" role="region" aria-label="Relacionamento Interpessoal">
+        <button class="acc-head" type="button" aria-expanded="false">
+          Relacionamento Interpessoal
+          <div class="chev"></div>
+        </button>
+        <div class="acc-content" role="region" aria-label="Relacionamento Interpessoal">
           <div class="pills">
             <span>Relacionamento & adaptabilidade</span><span>Flexibilidade</span><span>Aprendizado ativo</span>
           </div>
@@ -319,8 +318,11 @@
       </div>
 
       <div class="acc-item">
-        <button class="acc-btn" type="button" aria-expanded="false">Autoconhecimento</button>
-        <div class="acc-body" role="region" aria-label="Autoconhecimento">
+        <button class="acc-head" type="button" aria-expanded="false">
+          Autoconhecimento
+          <div class="chev"></div>
+        </button>
+        <div class="acc-content" role="region" aria-label="Autoconhecimento">
           <div class="pills">
             <span>Identificação de potencial</span><span>Resiliência</span><span>Motivação</span><span>Coragem</span>
           </div>
@@ -329,7 +331,6 @@
     </div>
   </section>
 
-  <!-- IDIOMAS -->
   <section class="wrap section">
     <h2>Idiomas</h2>
     <ul class="chips">
@@ -339,7 +340,6 @@
     </ul>
   </section>
 
-  <!-- RODAPÉ -->
   <footer class="wrap foot">
     <p>© <span id="y"></span> Luiz Felipe Maciel Mendonça</p>
   </footer>
@@ -347,21 +347,30 @@
   <script>
     document.getElementById('y').textContent = new Date().getFullYear();
 
-    // Acordeão novo — apenas 1 aberto
+    // Lógica do Acordeão Atualizada
     const items = [...document.querySelectorAll('.acc-item')];
     items.forEach((item) => {
-      const btn = item.querySelector('.acc-btn');
-      btn.addEventListener('click', () => {
-        const isOpen = item.classList.contains('open');
-        items.forEach(i => {
-          i.classList.remove('open');
-          i.querySelector('.acc-btn').setAttribute('aria-expanded','false');
+      // Alterado seletor para .acc-head conforme CSS
+      const btn = item.querySelector('.acc-head');
+      
+      if(btn) {
+        btn.addEventListener('click', () => {
+          const isOpen = item.classList.contains('open');
+          
+          // Fecha os outros
+          items.forEach(i => {
+            i.classList.remove('open');
+            const b = i.querySelector('.acc-head');
+            if(b) b.setAttribute('aria-expanded','false');
+          });
+
+          // Abre o clicado se não estava aberto
+          if (!isOpen) {
+            item.classList.add('open');
+            btn.setAttribute('aria-expanded','true');
+          }
         });
-        if (!isOpen) {
-          item.classList.add('open');
-          btn.setAttribute('aria-expanded','true');
-        }
-      });
+      }
     });
   </script>
 </body>
