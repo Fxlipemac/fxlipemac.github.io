@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Luiz Felipe Maciel Mendonça — Portfolio</title>
 
-  <link rel="stylesheet" href="/style.css?v=29" />
+  <link rel="stylesheet" href="/style.css?v=34" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -32,7 +32,7 @@
           GitHub
         </a>
         <a class="pill trailhead" href="https://www.salesforce.com/trailblazer/fxlipemac" target="_blank" rel="noopener" aria-label="Trailhead">
-          <img class="ico" src="/trailhead-icon.png" alt="Trailhead" loading="lazy" decoding="async">
+          <img class="ico" src="/trailhead-icon.png" alt="Trailhead" loading="lazy" decoding="async" onerror="this.style.display='none'">
           Trailhead
         </a>
         <a class="pill ghost" href="mailto:felipemaciel1501@hotmail.com" aria-label="E-mail">
@@ -51,46 +51,46 @@
   <section class="wrap section">
     <h2>Skills</h2>
     <ul class="icon-grid" aria-label="Stacks e ferramentas">
-      <li class="iicon" title="Salesforce" aria-label="Salesforce">
+      <li class="iicon" title="Salesforce">
         <i class="devicon-salesforce-plain colored"></i>
       </li>
-      <li class="iicon" title="Python" aria-label="Python">
+      <li class="iicon" title="Python">
         <i class="devicon-python-plain colored"></i>
       </li>
-      <li class="iicon" title="Flask" aria-label="Flask">
+      <li class="iicon" title="Flask">
         <i class="devicon-flask-original colored"></i>
       </li>
-      <li class="iicon" title="PHP" aria-label="PHP">
+      <li class="iicon" title="PHP">
         <i class="devicon-php-plain colored"></i>
       </li>
-      <li class="iicon" title="Laravel" aria-label="Laravel">
+      <li class="iicon" title="Laravel">
         <i class="devicon-laravel-plain colored"></i>
       </li>
-      <li class="iicon" title="C" aria-label="C">
+      <li class="iicon" title="C">
         <i class="devicon-c-plain colored"></i>
       </li>
-      <li class="iicon" title="HTML5" aria-label="HTML5">
+      <li class="iicon" title="CSS3">
+        <i class="devicon-css3-plain colored"></i>
+      </li>
+      <li class="iicon" title="HTML5">
         <i class="devicon-html5-plain colored"></i>
       </li>
-      <li class="iicon" title="CSS3" aria-label="CSS3">
-        <i class="devicon-css3-original colored"></i>
-      </li>
-      <li class="iicon" title="MySQL" aria-label="MySQL">
+      <li class="iicon" title="MySQL">
         <i class="devicon-mysql-plain colored"></i>
       </li>
-      <li class="iicon" title="Git" aria-label="Git">
+      <li class="iicon" title="Git">
         <i class="devicon-git-plain colored"></i>
       </li>
-      <li class="iicon" title="GitHub" aria-label="GitHub">
-        <i class="devicon-github-original colored"></i>
+      <li class="iicon" title="GitHub">
+        <i class="devicon-github-original"></i>
       </li>
-      <li class="iicon" title="Postman" aria-label="Postman">
+      <li class="iicon" title="Postman">
         <i class="devicon-postman-plain colored"></i>
       </li>
-      <li class="iicon" title="Linux" aria-label="Linux">
-        <i class="devicon-linux-plain colored"></i>
+      <li class="iicon" title="Linux">
+        <i class="devicon-linux-plain"></i>
       </li>
-      <li class="iicon" title="Windows" aria-label="Windows">
+      <li class="iicon" title="Windows">
         <i class="devicon-windows8-original colored"></i>
       </li>
     </ul>
@@ -114,11 +114,10 @@
   <section class="wrap section" id="projects">
     <h2>Projetos</h2>
     <ul class="plist">
-
       <li class="project">
         <div class="p-main">
           <h3>Gerenciamento de Papéis em Contratos - Salesforce</h3>
-          <p>Desenvolvi uma interface reativa em Lightning Web Components (LWC) estilo Kanban para organização de stakeholders. Implementei Apex Triggers e Controllers para garantir integridade de dados e bloquear duplicidade de registros (Regra de Negócio). Apliquei tratamento de erros robusto com feedback visual e utilizei Git para versionamento e controle de branches.
+          <p>Desenvolvi uma interface reativa em Lightning Web Components (LWC) estilo Kanban para organização de stakeholders. Implementei Apex Triggers e Controllers para garantir integridade de dados e bloquear duplicidade de registros (Regra de Negócio).
             <span class="stack">LWC · Apex · SOQL · SOSL · Git/Github</span>
           </p>
           <div class="row">
@@ -126,10 +125,9 @@
           </div>
         </div>
         <a class="thumb" href="https://github.com/Fxlipemac/developer-custom-challenge" target="_blank" rel="noopener">
-          <img src="/fxlipemac.github.io/custom-challenge.png" onerror="this.onerror=null; this.src='custom-challenge.png';" alt="Imagem challenge duplicidade" loading="lazy" width="160" height="100">
+          <img src="custom-challenge.png" onerror="this.style.display='none'" alt="Imagem challenge duplicidade" loading="lazy" width="160" height="100">
         </a>
       </li>
-
       <li class="project">
         <div class="p-main">
           <h3>YOLOv11 — Detecção de Veículos</h3>
@@ -141,9 +139,7 @@
           </div>
         </div>
         <a class="thumb" href="https://github.com/Fxlipemac/carobjectdetectionmodelyolo_backup" target="_blank" rel="noopener">
-          <img src="/img/carobjectdetection.jpg"
-               onerror="this.onerror=null; this.src='carobjectdetection.jpg';"
-               alt="Frames do dataset com detecções do YOLOv11" loading="lazy" width="160" height="100">
+          <img src="carobjectdetection.jpg" onerror="this.style.display='none'" alt="Frames do dataset com detecções do YOLOv11" loading="lazy" width="160" height="100">
         </a>
       </li>
     </ul>
@@ -163,9 +159,7 @@
           </div>
         </div>
         <a class="thumb" href="https://app.rocketseat.com.br/certificates/7561b9e4-d17f-4dcd-9fa9-4a807d4469e1" target="_blank" rel="noopener">
-          <img src="/img/php_certificado.png"
-               onerror="this.onerror=null; this.src='php_certificado.png';"
-               alt="Certificado Laravel + MySQL (Rocketseat)" loading="lazy" width="160" height="100">
+          <img src="php_certificado.png" onerror="this.style.display='none'" alt="Certificado Laravel" loading="lazy" width="160" height="100">
         </a>
       </li>
 
@@ -180,9 +174,7 @@
           </div>
         </div>
         <a class="thumb" href="https://app.rocketseat.com.br/certificates/f8bafeca-2312-4324-b896-a7cdd1facce5" target="_blank" rel="noopener">
-          <img src="/img/python_certificado.png"
-               onerror="this.onerror=null; this.src='python_certificado.png';"
-               alt="Certificado Python com Flask (Rocketseat)" loading="lazy" width="160" height="100">
+          <img src="python_certificado.png" onerror="this.style.display='none'" alt="Certificado Python" loading="lazy" width="160" height="100">
         </a>
       </li>
 
@@ -197,9 +189,7 @@
           </div>
         </div>
         <a class="thumb" href="https://app.rocketseat.com.br/certificates/89669057-ef79-46eb-9825-4da6dc7ebe84" target="_blank" rel="noopener">
-          <img src="/img/java_certificado.png"
-               onerror="this.onerror=null; this.src='java_certificado.png';"
-               alt="Certificado Java Serverless (Rocketseat)" loading="lazy" width="160" height="100">
+          <img src="java_certificado.png" onerror="this.style.display='none'" alt="Certificado Java" loading="lazy" width="160" height="100">
         </a>
       </li>
     </ul>
@@ -207,14 +197,14 @@
 
   <section class="wrap section">
     <h2>Competências</h2>
-
     <div class="acc-grid" id="accGrid">
+      
       <div class="acc-item open">
         <button class="acc-head" type="button" aria-expanded="true">
           Empatia
           <div class="chev"></div>
         </button>
-        <div class="acc-content" role="region" aria-label="Empatia">
+        <div class="acc-content" role="region">
           <div class="pills">
             <span>Comunicação</span><span>Colaboração orientada</span><span>Reconhecimento do outro</span>
           </div>
@@ -226,9 +216,9 @@
           Autogestão
           <div class="chev"></div>
         </button>
-        <div class="acc-content" role="region" aria-label="Autogestão">
+        <div class="acc-content" role="region">
           <div class="pills">
-            <span>Regulação emocional</span><span>Prontidão & senso de urgência</span><span>Inteligência sensitiva</span>
+            <span>Regulação emocional</span><span>Prontidão</span>
           </div>
         </div>
       </div>
@@ -238,7 +228,7 @@
           Criatividade
           <div class="chev"></div>
         </button>
-        <div class="acc-content" role="region" aria-label="Criatividade">
+        <div class="acc-content" role="region">
           <div class="pills">
             <span>Análise & inovação</span><span>Iniciativa & proatividade</span><span>Autonomia</span>
           </div>
@@ -250,9 +240,9 @@
           Produtividade
           <div class="chev"></div>
         </button>
-        <div class="acc-content" role="region" aria-label="Produtividade">
+        <div class="acc-content" role="region">
           <div class="pills">
-            <span>Planejamento & organização</span><span>Gestão do tempo</span><span>Autocontrole & performance</span><span>Adaptabilidade</span>
+            <span>Planejamento & organização</span><span>Gestão do tempo</span><span>Autocontrole</span>
           </div>
         </div>
       </div>
@@ -262,7 +252,7 @@
           Resolução de Problemas
           <div class="chev"></div>
         </button>
-        <div class="acc-content" role="region" aria-label="Resolução de Problemas">
+        <div class="acc-content" role="region">
           <div class="pills">
             <span>Tomada de decisão</span><span>Problemas complexos</span><span>Mediação de conflitos</span>
           </div>
@@ -274,9 +264,9 @@
           Inteligência Emocional
           <div class="chev"></div>
         </button>
-        <div class="acc-content" role="region" aria-label="Inteligência Emocional">
+        <div class="acc-content" role="region">
           <div class="pills">
-            <span>Disciplina focada</span><span>Aprendizado via feedback</span><span>Gestão de recursos pessoais</span>
+            <span>Disciplina focada</span><span>Aprendizado via feedback</span><span>Gestão de recursos</span>
           </div>
         </div>
       </div>
@@ -286,9 +276,9 @@
           Pensamento Crítico
           <div class="chev"></div>
         </button>
-        <div class="acc-content" role="region" aria-label="Pensamento Crítico">
+        <div class="acc-content" role="region">
           <div class="pills">
-            <span>Análise sistêmica</span><span>Raciocínio lógico</span><span>Resolução de problemas</span>
+            <span>Análise sistêmica</span><span>Raciocínio lógico</span>
           </div>
         </div>
       </div>
@@ -298,21 +288,21 @@
           Persuasão & Negociação
           <div class="chev"></div>
         </button>
-        <div class="acc-content" role="region" aria-label="Persuasão e Negociação">
+        <div class="acc-content" role="region">
           <div class="pills">
-            <span>Comunicação assertiva</span><span>Influência & persuasão</span><span>Competência intercultural</span>
+            <span>Comunicação assertiva</span><span>Influência</span><span>Competência intercultural</span>
           </div>
         </div>
       </div>
 
       <div class="acc-item">
         <button class="acc-head" type="button" aria-expanded="false">
-          Relacionamento Interpessoal
+          Relacionamento
           <div class="chev"></div>
         </button>
-        <div class="acc-content" role="region" aria-label="Relacionamento Interpessoal">
+        <div class="acc-content" role="region">
           <div class="pills">
-            <span>Relacionamento & adaptabilidade</span><span>Flexibilidade</span><span>Aprendizado ativo</span>
+            <span>Adaptabilidade</span><span>Flexibilidade</span><span>Aprendizado ativo</span>
           </div>
         </div>
       </div>
@@ -322,12 +312,13 @@
           Autoconhecimento
           <div class="chev"></div>
         </button>
-        <div class="acc-content" role="region" aria-label="Autoconhecimento">
+        <div class="acc-content" role="region">
           <div class="pills">
-            <span>Identificação de potencial</span><span>Resiliência</span><span>Motivação</span><span>Coragem</span>
+            <span>Identificação de potencial</span><span>Resiliência</span><span>Motivação</span>
           </div>
         </div>
       </div>
+
     </div>
   </section>
 
@@ -347,24 +338,17 @@
   <script>
     document.getElementById('y').textContent = new Date().getFullYear();
 
-    // Lógica do Acordeão Atualizada
     const items = [...document.querySelectorAll('.acc-item')];
     items.forEach((item) => {
-      // Alterado seletor para .acc-head conforme CSS
       const btn = item.querySelector('.acc-head');
-      
       if(btn) {
         btn.addEventListener('click', () => {
           const isOpen = item.classList.contains('open');
-          
-          // Fecha os outros
           items.forEach(i => {
             i.classList.remove('open');
             const b = i.querySelector('.acc-head');
             if(b) b.setAttribute('aria-expanded','false');
           });
-
-          // Abre o clicado se não estava aberto
           if (!isOpen) {
             item.classList.add('open');
             btn.setAttribute('aria-expanded','true');
