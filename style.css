@@ -67,7 +67,10 @@ h1,h2,h3{margin:0 0 10px 0}
 .icon-grid li{
   width:56px;height:56px;border-radius:50%;
   border:1px solid var(--stroke);display:grid;place-items:center;
-  background:var(--card);
+  background:var(--card);transition:transform 0.3s ease,box-shadow 0.3s ease;cursor:pointer
+}
+.icon-grid li:hover{
+  transform:scale(1.15);box-shadow:0 8px 20px rgba(59,130,246,0.3)
 }
 .icon-grid i{font-size:28px;color:#d5dcea}
 .svgicon svg{width:28px;height:28px;color:#d5dcea}
