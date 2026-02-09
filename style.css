@@ -72,9 +72,11 @@ h1,h2,h3{margin:0 0 10px 0}
 .icon-grid li:hover{
   transform:scale(1.15);box-shadow:0 8px 20px rgba(59,130,246,0.3)
 }
+.iicon i{font-size:36px;display:flex;align-items:center;justify-content:center}
+.iicon i.colored{filter:saturate(1.2)}
 .icon-grid i{font-size:28px;color:#d5dcea}
-.svgicon svg{width:28px;height:28px;color:#d5dcea}
-.imgicon img{width:28px;height:28px;object-fit:contain}
+.svgicon svg{width:40px;height:40px;color:#d5dcea;display:block}
+.imgicon img{width:40px;height:40px;object-fit:contain}
 
 /* PROJETOS */
 .plist{list-style:none;margin:0;padding:0;display:grid;gap:18px}
