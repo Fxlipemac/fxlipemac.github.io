@@ -200,6 +200,23 @@ h1, h2, h3 {
   filter: saturate(1.1) brightness(1.1);
 }
 
+.icon-text {
+  color: #ffffff;
+  font-size: 0.7rem;
+  text-align: center;
+  line-height: 1.1;
+  padding: 0 4px;
+  display: block;
+  max-width: 100%;
+}
+
+.icon-img {
+  width: 32px;
+  height: 32px;
+  display: block;
+  object-fit: contain;
+}
+
 .devicon-github-original {
   color: #ffffff !important;
 }
